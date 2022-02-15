@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <center>
+        <h2>COVID-19 SURVEY FORM</h2>
+   
+    <form action="#" method="post">
+        <img src="../images/covid.jfif" ></center>
+
+        <center><label>ENTER YOUR PERSONAL DETAILS</label>
+        <div>
+            <label name="lblname">
+                 Name:
+            </label>
+             <input type="text" name="txtname" placeholder="enter your name here" autofocus autocomplete="off">
+        </div><br>
+        <div>
+            <label name="lblemail">
+                E-MAIL:
+            </label>
+             <input type="text" name="txtemail" placeholder="enter your email here" >
+           </div><br>
+       <div>
+        <label name="lblmobilenum">
+            MOBILE:
+        </label>
+         <input type="text" name="txtmobilenum" placeholder="enter your mobile number here" autocomplete="off" >
+       </div><br>
+       <div>
+        <label name="lblcity">
+            CITY:
+         </label>
+         <input type="text" name="txtcity" placeholder="enter your city " >
+         </div><br>
+         <div>
+            <label name="lblstate">
+                STATE:
+             </label>
+             <input type="text" name="txtstate" placeholder="enter your state here" >
+             </div><br></center>
+             <label>ANSWER TO THE QUESTIONS BELOW FOR SURVEY :</label><br><br>
+             <div>
+                <label >
+                   What is your gender?
+                </label>
+                <input type="radio"   name="options" id="male">MALE
+                <input type="radio"   name="options" id="female">FEMALE
+               </div><br>
+
+               <div>
+                <label >
+                   Have you experienced any below covid 19 symptoms
+                </label>
+                <input type="checkbox"   name="options" id="cold">Cold
+                <input type="checkbox"   name="options" id="cough">Cough
+                <input type="checkbox"   name="options" id="muscle pain">Muscle pain
+                <input type="checkbox"   name="options" id="none">NONE
+                
+               </div><br>
+               <div>
+                <label >
+                   Do you suffer from any of the below disease?
+                </label>
+                <input type="checkbox"   name="cd" id="cold">Cardiovascular disease
+                <input type="checkbox"   name="cd" id="cough">Diabetes
+                <input type="checkbox"   name="cd" id="muscle pain">Bronchitis
+                <input type="checkbox"   name="cd" id="none">Asthma
+                <input type="checkbox"   name="cd" id="none">NONE
+                
+               </div><br>
+             <div>
+             <label >
+                Have you received a COVID-19 vaccine?
+             </label>
+             <input type="radio"   name="opt" id="yes">YES
+             <input type="radio"   name="opt" id="no">NO
+            </div><br>
+             <div>
+             <label >
+                If not vaccinated Do you have a medical reason for not receiving the COVID-19 vaccine?
+             </label>
+             <input type="radio"   name="optional" id="yes">YES
+             <input type="radio"   name="optional" id="no">NO
+            </div><br>
+          <div>        
+           <label >
+                If you are planning on receiving the vaccine, where would you prefer to receive it if given the choice:
+           </label><br>
+             <input type="radio"   name="options1" id="yes">My healthcare provider
+             <input type="radio"   name="options1" id="no">Local health department
+             <input type="radio"name="options1" id="3"> Vaccination clinic at [Company name] worksite
+          </div><br>
+          <div><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports"> Visit here for COVID-19 Details</a></div><br>
+           <div>
+                 <input type="submit" value="submit">
+             </div>
+    </form>
+</body>
+</html>
