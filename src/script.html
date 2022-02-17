@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+    <div>
+    <form method="post">
+        <div>
+            <label>
+                Message
+            </label>
+            <input title="enter a message" id="msg"/>
+            <button type="submit" class="btn">Create</button>
+        </div>
+        <div>
+            Base64 encoded text:
+            <label id="msg1"></label>
+        </div>
+    </form>
+    </div>
+    <!--in the script tag the event which happens aftr clicking the "submit" will be done as follows
+    1.it seaches the DOM tree for the "form " and if submit ebvent happens it first makes the disable of default {defaultly it goes to post method}
+     2.after it takes the id=msg where its and consider as input
+     3.it encryptes the input using the "btoa" inbuild function in JS 
+    4.after it takes the query to select the place with id=msg1 to where it displays the answer
+    5.then it displays using innerHTML at the place of label in msg1 encrypted content-->
+    <script>
+        document.querySelector('form').addEventListener('submit',event =>
+        {
+            event.preventDefault();
+            const input =document.querySelector('#msg');
+            const encrypted=btoa(input.value);
+            const node_label=document.querySelector('#msg1');
+            node_label.innerHTML=encrypted;
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
