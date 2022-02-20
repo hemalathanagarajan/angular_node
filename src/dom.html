@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM tree access</title>
+    <style>
+        .green{
+            background-color:green
+        }
+        li.yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="div01" class='green'>welcome to Success</div>
+      <h1>My Success</h1>
+      <p>the technology is growing day by day</p>
+      <ul>
+          <li class="green">list1</li>
+          <li>list2</li>
+          <li class="yellow">list3</li>
+          <li >list4</li>
+      </ul>
+      <p><img alt="dom model" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/DOM-model.svg"></p>
+      <p>
+          <input title="enter name" type="text" id="txtname"  value="hemalatha" onchange="myfun()"/>
+
+      </p>
+    </div>
+    <script>
+        /*console.dir(document);//root element
+        console.log(document.URL);//html
+        console.dir(document.children[0]);//head-first child of html
+        console.dir(document.children[0].children[1]);//body-second child of html
+        console.dir(document.children[0].children[1].childNodes);//inner contents of body*/
+ 
+        /*document.getElementById("div01").innerHTML="hello world!upadted"
+        var v_name = document.getElementById("txtname");
+        console.log(v_name.value);
+        var listItems=document.getElementsByTagName('li')
+
+        for(var i=0;i<listItems.length;i++)
+        {
+            listItems[i].innerHTML = "item" + (i+1);
+        }
+        
+        listItems[2].innerHTML="updated text";
+        var imglist=document.getElementsByTagName('img');
+        imglist[0].src="../images/example.jpeg";*/
+
+        /*var listItems=document.getElementsByClassName('green')
+        for(var i=0;i<listItems;i++)
+        {
+            listItems[i].innerHTML= "green color text updated"
+        }
+
+        console.dir(document.querySelector('li'));//it returns the first element
+        console.dir(document.querySelectorAll('li'));
+        console.dir(document.querySelector('ul > li'));
+        console.dir(document.querySelector('div'));
+        console.dir(document.querySelector('#div01'));//return div with specified id
+        console.dir(document.querySelector('.green'));
+        console.dir(document.querySelectorAll('div'));
+        document.getElementById("div01").style.color = 'purple'
+        console.dir(document.getElementsByClassName('green'));*/
+       
+       const arr=[1,2,3,4,5,6];
+       console.log(arr);
+       const strArr=JSON.stringify(arr);
+       console.log(strArr);
+       const myObj={
+           firstname:'myfirstname',
+           lastname:'mylastname'
+       };
+       const strjson = JSON.stringify(myObj);
+       console.log(strjson);
+       var javastudents = {
+           "studentlist":[
+               {"name":"Ajith","age":"22"},
+               {"name":"vijay","age":"22"},
+               {"name":"tom","age":"22"},
+               ]
+       };
+       console.log(javastudents);
+       const arr1=JSON.parse(strjson);
+       console.log(arr1);
+       const obj1=JSON.parse(strjson);
+       console.log(obj1);
+       
+       function myfun()//when we hit enter the onchanges=myfun() works and modifies the content with specified ID given
+       {
+           document.getElementById("div01").innerText=document.getElementById("txtname").value;
+           document.getElementById("div01").style.color = 'black'
+           var output = document.getElementById('div01');
+           output.style.backgroundColor = "blue";
+           output.style.border="3px solid orange";
+
+       }
+
+
+
+
+    </script>
+</body>
+   
+
+
+
+</html>
