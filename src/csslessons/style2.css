@@ -1,0 +1,18 @@
+section p{
+    color: red;
+}
+section > p{
+    color:orange;
+}
+/*this h1+p applies which comes immediately after h1 it comes paragraph*/
+h1 + p{
+    background-color: blue;
+    color:yellow;
+}
+/* It applies to all paragraphs*/
+h1 ~ p{
+    background-color: black;
+}
+h1 > p{
+    background-color: green;
+}

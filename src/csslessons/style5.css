@@ -1,0 +1,31 @@
+div{
+    width: 500px;
+    height: 500px;
+    border:5px solid red;
+    color:aquamarine;
+    background-image:url("../../images/example.jpeg");
+    margin: 100px auto;
+}
+/*background no repeat */
+#div{
+    width: 500px;
+    height: 300px;
+    border:5px solid red;
+    background-repeat: no-repeat;
+
+    color:aquamarine;
+    background-image:url("../../images/picture.jpeg");
+    margin: 100px auto;
+    background-size: 100px;
+}
+#div2{
+    width: 500px;
+    height: 500px;
+    border:5px solid red;
+    color:aquamarine;
+    background-image:url("../../images/picture.jpeg");
+    margin: 100px auto;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
