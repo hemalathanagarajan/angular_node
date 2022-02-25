@@ -10,7 +10,7 @@ a:hover{
     color:blue;
 }
 a:active{
-  color:green;  
+  color:rgb(211, 123, 134);  
 }
 .dropdown-content a{
     display:none;

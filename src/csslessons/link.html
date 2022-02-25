@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors for link </title>
+    <style>
+        a{
+            color:red;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #chennai{
+            color:red;
+
+        }
+        #madurai{
+            color:green;
+        }
+        /*a[href="https://chennai.nic.in"]
+        {
+            color:yellow;
+        }
+        a[href="https://madurai.nic.in"]
+        {
+            color:green;
+        }*/
+        a[href*="https://chennai.nic.in"]
+        {
+            color:yellow;
+        }
+        a[href*="https://madurai.nic.in"]
+        {
+            color:green;
+        }
+        input[name="button"]{
+            background:magenta;
+        }
+    </style>
+</head>
+<body>
+    <p>visit<a href="https://chennai.nic.in" > Chennai</a></p>
+    <p>visit<a href="https://madurai.nic.in">Madurai without /</p>
+    <p> <a href="https://madurai.nic.in/" >Madurai with /</a></p>
+    <input type="submit" value="button" name="button">
+</body>
+</html>

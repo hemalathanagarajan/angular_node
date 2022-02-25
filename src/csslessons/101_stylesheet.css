@@ -7,13 +7,16 @@ h3{
     background-color: blue;
     color:white;
 }
+/*Grouping of elements (h1,h3)*/
 h1,h3{
     color:white;
 }
+/*setting CONTEXT selector*/
 ul li{/*child not consider of depth in whole of ul*/
     color:red;
 }
 /*selecting parent -child immediate child of ul only applies*/
+/* in below the <li> tag thats inside <ul> will make it red. here,the<li>tag will be made green only in context of <ul> tag*/
 ul>li{
     color:blue;
 }

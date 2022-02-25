@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID based CSS</title>
-    <style>
-        #first{
+    <style>/*selecting element by ID*/
+        /*#first{
             color: aquamarine;
             font-size: larger;
+        }*/
+        
+        p:nth-child(1n+1)
+        {
+            color: cyan;
+            font-size: larger;
         }
+       p:nth-child(odd)
+        {
+            color: orange;
+           font-size: larger;
+        }
+        /* p:nth-child(add)
+        {
+            color:brown;
+            font-size:larger;
+        }*/
+        p:first-child{
+            color:red;
+            font-size:larger;
+        }
+        p:last-child{
+            color: blue;
+            font-size: larger;
+        }
+    
     </style>
 </head>
 <body>
@@ -20,6 +45,19 @@
         remaining essentially unchanged. </p>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+         remaining essentially unchanged. </p> 
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+       remaining essentially unchanged. </p>    
+       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
          remaining essentially unchanged. </p>    
-</body>
+         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+             remaining essentially unchanged. </p>    
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                 remaining essentially unchanged. </p>    
+                  
+    </body>
 </html>
