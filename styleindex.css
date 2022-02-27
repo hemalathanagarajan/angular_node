@@ -1,0 +1,10 @@
+*{
+    margin:20px;
+    padding: 0px;
+}
+body{
+    background-image:linear-gradient(to bottom, hsl(293, 100%, 63%), white,darkviolet);
+    font-size: 16px;
+    
+    
+}
