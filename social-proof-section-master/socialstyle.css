@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+--VeryDark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Magenta: hsl(303, 10%, 53%);
+--Light-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;   
+    background: url("./images/bg-pattern-top-mobile.svg") top no-repeat, url("./images/bg-pattern-bottom-mobile.svg") bottom no-repeat;
+}
+
+header, main, footer{
+    margin: 0 2rem;
+}
+.intro{
+    margin-top: 5rem;
+}
+
+h1{
+    padding-bottom: 1.5rem;
+}
+h1, .rating-text{
+    color: var(--VeryDark-Magenta);
+}
+
+.rating-container{
+    margin: 3rem 0;
+}
+.rating-box{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: var(--Light-Magenta);
+}
+.rating-text{
+    padding-top: 0.5rem;
+    font-weight: 700;
+}
+
+.review-box{
+    margin: 1rem 0;
+    padding: 2rem;
+    background-color: var(--VeryDark-Magenta);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    margin: 0 1rem 1rem 0;
+    border-radius: 50%;
+    height: 45px;
+}
+.name-text{
+    color: var(--White);
+}
+.buyer-text{
+    color: var(--Soft-Pink);
+}
+.comment-text{
+    text-align: left;
+
+    color: var(--Light-Magenta);
+}
+
+.rating-box, .review-box{
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        margin: 0 3rem;
+        background: url(./images/bg-pattern-top-desktop.svg) top no-repeat, url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+    }
+    header{
+        display: flex;
+        text-align: left;
+    }
+    .intro{
+        padding-right: 15rem;
+    }
+
+    .intro, .rating-container{
+        width: 50%;
+        position: relative;
+    }
+    .rating-box{
+        width: 450px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .rating-box > img{
+        height: 100%;
+    }
+    .rating-box > p{
+        padding-left: 1rem;
+    }
+    .rating-box2{
+        margin-left: 3rem;
+    }
+    .rating-box3{
+        margin-left: 6rem;
+    }
+    main{
+        display: flex;
+    }
+    .review-container2{
+        margin: 3rem;
+    }
+    .review-container3{
+        margin-top: 6rem;
+    }
+}
