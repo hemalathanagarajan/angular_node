@@ -1,0 +1,41 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+
+
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+     --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+button{
+    background: var(--pink);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    width: 16rem;
+    cursor: pointer;
+    margin: 3rem 0;
+    box-shadow: rgba(0,0,0, 0.2) 0px 3px 7px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+button:hover{
+    background: var(--lightpink);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
