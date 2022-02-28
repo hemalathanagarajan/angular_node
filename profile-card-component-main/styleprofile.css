@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --DarkCyan: hsl(185, 75%, 39%);
+  --VeryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --DarkGrayishBlue: hsl(227, 10%, 46%);
+  --DarkGray: rgb(150, 150, 150);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--DarkCyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+h1,
+h2 {
+  color: var(--VeryDarkDesaturatedBlue);
+  font-size: 19px;
+  font-weight: 800;
+}
+p {
+  color: var(--DarkGray);
+  font-size: 12px;
+}
+
+.container {
+  max-width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Background */
+.background {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+.background .top-img {
+  position: absolute;
+  top: -100%;
+  left: -30%;
+}
+.background .bottom-img {
+  position: absolute;
+  right: -25%;
+  bottom: -100%;
+}
+
+/* Content */
+.card {
+  max-width: 200px;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.card-top {
+  width: 100%;
+}
+
+.avatar {
+  width: 35%;
+  border-radius: 100%;
+  position: relative;
+  border: 5px solid white;
+  top: -50px;
+}
+
+.bottom {
+  transform: translateY(-30px);
+}
+
+.heading {
+  text-align: center;
+}
+.heading > p {
+  margin-bottom: 20px;
+}
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+.name h1 {
+  display: inline-block;
+  margin-right: 10px;
+}
+.name p {
+  display: inline-block;
+  font-size: 18px;
+}
+
+hr {
+  border: none;
+  border-top: 0.5px solid rgba(150, 150, 150, 0.2);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.stat-solo h2 {
+  margin-bottom: 8px;
+}
+.stat-solo p {
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .top-img {
+    top: -80% ;
+    left: -110% ;
+    transform: rotateZ(90deg) scale(0.5);
+  }
+  .bottom-img {
+    right: -100% ;
+    bottom: -90% ;
+    transform: scale(0.5);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .container {
+    transform: scale(1.5);
+  }
+  .top-img {
+    top: -50% ;
+    left: -40%;
+    transform: scale(1.5);
+  }
+  .bottom-img {
+    right: -15% ;
+    bottom: -50% ;
+  }
+}
