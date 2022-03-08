@@ -1,0 +1,99 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-top: 20px;
+  color: var(--VeryDarkBlue);
+  margin-left: 39%;
+  margin-right: 35%;
+}
+h4 {
+  color: var(--Gray);
+  margin-left: 48%;
+  margin-right: 35%;
+}
+img {
+  margin-top: 25px;
+  margin-left: 48%;
+  margin-right: 35%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.btn {
+  background-color: var(--Blue);
+  border-radius: 25px;
+  height: 3em;
+  width: 15em;
+  color: white;
+  box-shadow: 3px 3px 3px var(--PaleBlue);
+  border-color: var(--Blue);
+}
+
+.btn:hover {
+  color: white;
+  cursor: pointer;
+}
+.email {
+  border-radius: 25px;
+  margin-left: 39%;
+  text-align: justify;
+  width: 20em;
+  height: 3em;
+  background-color: white;
+  border-color: var(--PaleBlue);
+}
+.center img {
+  margin-left: 29%;
+
+  width: 700px;
+  height: 400px;
+}
+.icons {
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 20px;
+  border-radius: 50px circle white;
+  box-shadow: blue;
+  text-decoration: none;
+}
+.fa-facebook {
+  background: white;
+  color: var(--Blue);
+}
+.fa-twitter {
+  background: white;
+  color: var(--Blue);
+}
+
+.fa-instagram {
+  background: white;
+  color: var(--Blue);
+}
+p {
+  color: var(--Gray);
+}
+@media only screen and (min-width: 750px) {
+  form {
+    flex-direction: row;
+  }
+}

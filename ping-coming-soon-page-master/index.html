@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body>
+<img src="images/logo.svg" >
+  <h1>We are launching soon!</h1>
+
+  <h4>Subscribe and get notified</h4>
+  <!--<form>
+  <input type="text" placeholder="enter your email" name="email"  class="email" id="email" >
+</form>-->
+
+
+  <form name="myForm" action="#">
+  <input type="email" class="email" placeholder=" Enter your Email Address">
+  <input type="submit"  name="submit" value="NOTIFY ME" class="btn" onclick="checkForm();">
+  
+</form>
+  
+</div>
+
+  <div class="center">
+  <img src="images/illustration-dashboard.png" >
+  <div class="icons">
+  <ul>  
+       
+    <a href="#" class="fa fa-facebook"> </a>   
+      
+      
+    <a href="#" class="fa fa-twitter"> </a>  
+ 
+    <a href="#" class="fa fa-instagram"> </a>  
+  </ul>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+</div>
+<script type="text/javascript">
+  function checkForm(){
+            //these are the handles to the element
+           var formEmail = document.myForm.email;
+           const emailValidation = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)?$/
+
+           //these variables areused to read the values entered
+           if (formEmail.value.length === 0 || !formEmail.value.match(emailValidation)) {
+                
+                alert("please enter a valid email");
+                formEmail.focus();
+                return;
+            }
+            document.myForm.submit();
+            
+            }
+</script>
+  
+</body>
+</html>
