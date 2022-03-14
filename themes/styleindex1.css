@@ -1,0 +1,161 @@
+body {
+  background-image: url(https://st2.depositphotos.com/4164031/8439/i/600/depositphotos_84390870-stock-photo-festive-lucky-star-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+* {
+  margin: 0px;
+  padding: 0;
+}
+.new {
+  color: white;
+  height: 42px;
+  list-style: none;
+  margin-top: 15;
+  text-align: right;
+}
+.new > li {
+  display: inline-block;
+  font-size: larger;
+  padding: 0 30px 0 30px;
+}
+.new > li > a {
+  color: whitesmoke;
+  margin-top: 2px;
+  text-decoration: none;
+}
+.new > li > a > hover {
+  color: blue;
+}
+.pojects {
+  align-items: center;
+}
+.logo {
+  border-radius: 50px;
+  box-shadow: 3px 3px 20px ghostwhite;
+  width: 30%;
+}
+.banner {
+  color: white;
+}
+.card1 {
+  border-radius: 5px;
+  box-shadow: 3px 3px 20px black;
+  height: 25%;
+}
+.card1 img {
+  width: 100%;
+}
+.text-image {
+  margin: 2px;
+  position: relative;
+}
+.text {
+  background-color: rgb(5, 4, 87);
+  color: white;
+  left: 5%;
+  position: absolute;
+  top: 128%;
+}
+.description1 {
+  background-color: whitesmoke;
+  color: grey;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  word-spacing: 4px;
+}
+.h2 {
+  margin-top: 40px;
+  margin-left: 37px;
+}
+h2 {
+  margin-top: 40px;
+  margin-left: 180px;
+}
+.contact {
+  color: white;
+  font-size: 22px;
+  margin-top: 60px;
+  margin-left: 65%;
+  text-shadow: 2px 2px red;
+}
+
+.card {
+  background-color: royalblue;
+  backdrop-filter: blur 1.5rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 20px ghostwhite;
+  display: inline-block;
+  height: 25%;
+  margin: 50px 30px 20px 45px;
+  width: 40%;
+}
+img {
+  height: 10%;
+  width: 100%;
+}
+.card .title {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 2px;
+  text-align: center;
+}
+.description {
+  background-color: #eeeeee;
+  color: grey;
+  font-size: 20px;
+  margin: 5%;
+  padding: 10px;
+  text-align: justify;
+  word-spacing: 4px;
+}
+.card3 {
+  background-color: royalblue;
+  backdrop-filter: blur 1.5rem;
+  box-shadow: 3px 3px 20px black;
+  border-radius: 5px;
+  height: 25%;
+  margin-bottom: 40px;
+  margin-left: 750px;
+  text-align: center;
+  width: 30%;
+}
+
+form #email {
+  border: none;
+  border-radius: 50px;
+  box-sizing: border-box;
+  height: 45px;
+  margin-bottom: 5px;
+  text-align: justify;
+  width: 60%;
+}
+form #send {
+  background-color: blue;
+  border: none;
+  border-radius: 25%;
+  box-sizing: border-box;
+  color: white;
+  height: 35px;
+  width: 30%;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  font-size: 26px;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+h1,
+h4 {
+  color: white;
+
+  text-shadow: 2px 2px red;
+}
