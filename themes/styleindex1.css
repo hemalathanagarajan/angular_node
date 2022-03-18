@@ -3,9 +3,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: scroll;
+  scroll-behavior: smooth;
 }
 * {
   margin: 0px;
@@ -42,12 +42,12 @@ body {
 .banner {
   color: white;
 }
-.card1 {
+.card-webdev {
   border-radius: 5px;
   box-shadow: 3px 3px 20px black;
   height: 25%;
 }
-.card1 img {
+.card-webdev img {
   width: 100%;
 }
 .text-image {
@@ -69,7 +69,7 @@ body {
   text-align: center;
   word-spacing: 4px;
 }
-.h2 {
+.my-name {
   margin-top: 40px;
   margin-left: 37px;
 }

@@ -7,9 +7,9 @@
   --Lightgrayishblue: hsl(210, 46%, 95%);
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   background-color: var(--Lightgrayishblue);
@@ -26,20 +26,20 @@ body {
   padding: 20px;
   position: relative;
 }
-.cards.box1 {
+.cards.Daniel-box {
   background-color: var(--Moderateviolet);
 }
-.cards.box2 {
+.cards.Johanathan-box {
   background-color: var(--Verydarkgrayishblue);
 }
-.cards.box3 {
+.cards.Jeanette-box {
   background-color: white;
   color: var(--Verydarkblackishblue);
 }
-.cards.box4 {
+.cards.Patrick-box {
   background-color: var(--Verydarkblackishblue);
 }
-.cards.box5 {
+.cards.Kira-box {
   background-color: white;
   color: var(--Verydarkblackishblue);
 }
@@ -69,11 +69,11 @@ body {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }
-  .cards.box1 {
+  .cards.Daniel-box {
     grid-row: 1;
     grid-column: 1/3;
   }
-  .cards.box4 {
+  .cards.Patrick-box {
     grid-row: 2;
     grid-column: 2/4;
   }

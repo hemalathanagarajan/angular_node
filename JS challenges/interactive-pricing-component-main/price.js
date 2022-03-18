@@ -14,7 +14,6 @@ function myFunction() {
         document.getElementById('button').style.backgroundColor = "#D0D7EE";
     }
 }
-
 function sliderBar() {
     if (y.value > 1 && y.value < 32) {
         document.getElementById('range').style.backgroundColor = "green";
@@ -22,12 +21,8 @@ function sliderBar() {
         document.getElementById('range').style.backgroundColor = "red";
     }
 }
-
-
 var slider = document.getElementById("range");
 var output = document.querySelector(".sixteen");
-
-
 slider.oninput = function() {
     // output.innerHTML = "$" + this.value + ".00";
     output.innerHTML = `$${this.value}.00`

@@ -1,21 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
     rel="stylesheet">
-
   <title>Frontend Mentor | Project tracking intro component</title>
-
 </head>
 
 <body>
@@ -35,7 +30,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="hero">
     <div class="hero-img"><img src="./images/illustration-devices.svg" alt="phone and laptop" /></div>
     <section class="hero__content">
@@ -48,19 +42,14 @@
     </section>
   </main>
 
-
-  
-
   <script type="text/javascript">
-
-const navToggle = document.querySelector('.nav__toggle')
-const navList = document.querySelector('.nav__list')
-const hamburger = document.querySelector('.hamburger')
-
-navToggle.addEventListener('click', e => {
-    navToggle.classList.toggle('open')
-    navList.classList.toggle('nav__list--active')
-})
+    const navToggle = document.querySelector('.nav__toggle')
+    const navList = document.querySelector('.nav__list')
+    const hamburger = document.querySelector('.hamburger')
+    navToggle.addEventListener('click', e => {
+      navToggle.classList.toggle('open')
+      navList.classList.toggle('nav__list--active')
+    })
   </script>
 </body>
 
