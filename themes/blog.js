@@ -2,8 +2,6 @@
 const mobileBtn=document.querySelector(".header__hamburger")
 const nav=document.querySelector("nav")
 const closes = document.querySelector(".header__close")
-
-
 const link=document.querySelectorAll(".header__links")
 
 for (i = 0; i < link.length; i++){
@@ -11,9 +9,6 @@ for (i = 0; i < link.length; i++){
         this.classList.toggle("active")
     }) 
 }
-
-
-
 mobileBtn.addEventListener("click",()=>{
     nav.classList.add("header__nav")
     mobileBtn.style.display = "none";

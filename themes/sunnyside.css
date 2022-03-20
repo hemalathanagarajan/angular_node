@@ -16,10 +16,10 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Barlow', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -31,35 +31,35 @@ body {
 }
 
 header {
-  background: url('images/desktop/image-header.jpg') no-repeat center center;
+  background: url('../images/image-header.jpg') no-repeat center center;
   background-size: cover;
-  width: 100%;
   height: 100vh;
+  width: 100%;
 }
 
 .nav-bar {
+  align-items: center;
   display: flex;
   height: 80px;
   justify-content: space-between;
-  align-items: center;
   padding: 0 50px;
 }
 #contact {
-  padding: 10px 20px;
+  background: var(--Yellow);
+  border-radius: 50px;
   color: var(--desaturatedblue);
   font-family: 'Fraunces', serif;
   font-weight: 700;
+  padding: 10px 20px;
   text-transform: uppercase;
-  background: var(--Yellow);
-  border-radius: 50px;
 }
 #contact:hover {
-  color: var(--White);
   background: #6eebff;
+  color: var(--White);
 }
 .nav-menu .menu-btn {
-  display: none;
   color: var(--White);
+  display: none;
   font-size: 22px;
   opacity: 0;
   pointer-events: none;
@@ -78,230 +78,225 @@ header {
 }
 
 .header-text {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 50px;
 }
 .header-text h1 {
   color: var(--White);
-  text-transform: uppercase;
   font-size: 40px;
   font-family: 'Fraunces', serif;
+  text-transform: uppercase;
 }
 .header-text svg {
   margin-top: 150px;
 }
-/* Header */
-
 .main-content {
-  width: 100%;
   display: flex;
   flex-direction: column;
-}
-.ct-1 {
-  display: flex;
   width: 100%;
+}
+.content-1 {
+  display: flex;
   height: 600px;
+  width: 100%;
 }
-.ct-1 .ct-text {
+.content-1 .content-text {
   display: flex;
   flex-direction: column;
-  width: 50%;
   height: 100%;
   justify-content: center;
   padding: 100px;
+  width: 50%;
 }
-.ct-1 .ct-text h1 {
+.content-1 .content-text h1 {
+  color: var(--desaturatedblue);
   font-family: 'Fraunces', serif;
   font-size: 40px;
-  color: var(--desaturatedblue);
   margin-bottom: 2rem;
 }
-.ct-1 .ct-text p {
+.content-1 .content-text p {
   color: var(--grayishblue);
   font-size: 18px;
   margin-bottom: 2rem;
 }
-.ct-1 .ct-text a {
-  position: relative;
-  display: inline-block;
-  width: 120px;
+.content-1 .content-text a {
   color: var(--desaturatedblue);
+  display: inline-block;
   font-family: 'Fraunces', serif;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-}
-.ct-text a::before {
-  content: '';
-  position: absolute;
   width: 120px;
-  height: 5px;
-  border-radius: 5px;
+}
+.content-text a::before {
   background: var(--Yellow);
+  border-radius: 5px;
   bottom: -5px;
+  content: '';
+  height: 5px;
   left: -3px;
   opacity: 0;
+  position: absolute;
   pointer-events: none;
   transition: all 0.3s ease;
+  width: 120px;
 }
-.ct-text a:hover::before {
+.content-text a:hover::before {
+  bottom: 0;
   opacity: 0.6;
   pointer-events: auto;
   z-index: -1;
-  bottom: 0;
 }
-.ct-1 .ct-img {
+.content-1 .content-img {
+  background: url('../images/image-transform.jpg') no-repeat center center;
   width: 50%;
-  background: url(./images/desktop/image-transform.jpg) no-repeat center center;
 }
 
-.ct-2 {
+.content-2 {
   display: flex;
   flex-direction: row-reverse;
-  width: 100%;
   height: 600px;
+  width: 100%;
 }
-.ct-2 .ct-text {
+.content-2 .content-text {
   display: flex;
   flex-direction: column;
-  width: 50%;
   height: 100%;
   justify-content: center;
   padding: 100px;
+  width: 50%;
 }
-.ct-2 .ct-text h1 {
+.content-2 .content-text h1 {
+  color: var(--desaturatedblue);
   font-family: 'Fraunces', serif;
   font-size: 40px;
-  color: var(--desaturatedblue);
   margin-bottom: 2rem;
 }
-.ct-2 .ct-text p {
+.content-2 .content-text p {
   color: var(--grayishblue);
   font-size: 18px;
   margin-bottom: 2rem;
 }
-.ct-2 .ct-text a {
-  position: relative;
-  display: inline-block;
-  width: 120px;
+.content-2 .content-text a {
   color: var(--desaturatedblue);
+  display: inline-block;
   font-family: 'Fraunces', serif;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
-}
-.ct-text a::before {
-  content: '';
-  position: absolute;
   width: 120px;
-  height: 5px;
-  border-radius: 5px;
+}
+.content-text a::before {
   background: var(--Softred);
+  border-radius: 5px;
   bottom: -5px;
+  content: '';
+  height: 5px;
   left: -3px;
   opacity: 0;
   pointer-events: none;
+  position: absolute;
   transition: all 0.3s ease;
+  width: 120px;
 }
-.ct-text a:hover::before {
+.content-text a:hover::before {
+  bottom: 0;
   opacity: 0.6;
   pointer-events: auto;
   z-index: -1;
-  bottom: 0;
 }
-.ct-2 .ct-img {
+.content-2 .content-img {
+  background: url(../images/image-stand-out.jpg) no-repeat center center;
   width: 50%;
-  background: url(./images/desktop/image-stand-out.jpg) no-repeat center center;
 }
 
-.ct-3 {
+.content-3 {
   display: flex;
   width: 100%;
   height: 600px;
 }
-.ct-3 .ct-3-l {
+.content-3 .content-3-l {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   text-align: center;
   width: 50%;
-  background: url(./images/desktop/image-graphic-design.jpg) no-repeat center
-    center;
+  background: url(../images/image-graphic-design.jpg) no-repeat center center;
   background-size: cover;
 }
-.ct-3-l .ct-text-bg {
-  width: 350px;
+.content-3-l .content-text-bg {
   margin-bottom: 5rem;
+  width: 350px;
 }
-.ct-3-l .ct-text-bg h1 {
+.content-3-l .content-text-bg h1 {
   color: var(--desaturatedcyan);
   font-family: 'Fraunces', serif;
   margin-bottom: 2rem;
 }
-.ct-3-l .ct-text-bg p {
+.content-3-l .content-text-bg p {
   color: var(--desaturatedcyan);
 }
 
-.ct-3 .ct-3-r {
-  width: 50%;
-  background: url(./images/desktop/image-photography.jpg) no-repeat center
-    center;
+.content-3 .content-3-r {
+  align-items: flex-end;
+  background: url(../images/image-photography.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   text-align: center;
   width: 50%;
 }
-.ct-3-r .ct-text-bg {
-  width: 350px;
+.content-3-r .content-text-bg {
   margin-bottom: 5rem;
+  width: 350px;
 }
-.ct-3-r .ct-text-bg h1 {
+.content-3-r .content-text-bg h1 {
   color: var(--Darkblue);
   font-family: 'Fraunces', serif;
   margin-bottom: 2rem;
 }
-.ct-3-r .ct-text-bg p {
+.content-3-r .content-text-bg p {
   color: var(--Darkblue);
 }
 
 .client {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 800px;
   padding: 100px 0;
   width: 100%;
-  height: 800px;
 }
 .client h1 {
   color: var(--grayishblue);
   font-family: 'Fraunces', serif;
-  text-transform: uppercase;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .client .client-profile-area {
   display: flex;
-  width: 80%;
   height: 500px;
   justify-content: space-between;
   margin-top: 3rem;
+  width: 80%;
 }
 .client-profile {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   padding: 0 10px;
 }
 .client-profile .client-img {
-  width: 100px;
   height: 100px;
+  width: 100px;
 }
 .client-img img {
-  width: 100%;
-  height: 100%;
   border-radius: 50%;
+  height: 100%;
+  width: 100%;
 }
 .client-profile .client-info {
   margin-top: 3rem;
@@ -326,48 +321,45 @@ header {
   width: 100%;
 }
 .grid-area {
-  width: 100%;
-  height: auto;
   display: grid;
+  height: auto;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 .grid-area .grid-item {
-  /* width: 300px; */
   height: 400px;
 }
 .grid-area .bg1 {
-  background: url(./images/desktop/image-gallery-milkbottles.jpg) no-repeat
-    center center;
+  background: url(../images/image-gallery-milkbottles.jpg) no-repeat center
+    center;
   background-size: cover;
 }
 .grid-area .bg2 {
-  background: url(./images/desktop/image-gallery-orange.jpg) no-repeat center
-    center;
+  background: url(../images/image-gallery-orange.jpg) no-repeat center center;
   background-size: cover;
 }
 .grid-area .bg3 {
-  background: url(./images/desktop/image-gallery-cone.jpg) no-repeat center
-    center;
+  background: url(../images/image-gallery-cone.jpg) no-repeat center center;
   background-size: cover;
 }
 .grid-area .bg4 {
-  background: url(./images/desktop/image-gallery-sugarcubes.jpg) no-repeat
-    center center;
+  background: url(../images/image-gallery-sugarcubes.jpg) no-repeat center
+    center;
   background-size: cover;
 }
 
 .footer-area {
-  width: 100%;
-  margin: 0 auto;
   background: var(--footer);
   padding: 50px 0;
+  margin: 0 auto;
+  width: 100%;
 }
 .ft-content {
-  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .ft-content .ft-menu {
   display: flex;
@@ -378,9 +370,9 @@ header {
   margin: 0 10px;
 }
 .ft-menu li a {
-  text-decoration: none;
   color: var(--desaturatedcyan);
   font-size: 12px;
+  text-decoration: none;
 }
 .ft-menu li a:hover {
   color: var(--White);
@@ -408,58 +400,58 @@ header {
     margin: 0 auto;
   }
   header {
-    background: url(./images/mobile/image-header.jpg) no-repeat center center;
+    background: url(../images/mobile/image-header.jpg) no-repeat center center;
     background-size: cover;
-    width: 100%;
     height: 550px;
+    width: 100%;
   }
   .nav-bar {
-    position: relative;
+    align-items: center;
     display: flex;
     height: 80px;
     justify-content: space-between;
-    align-items: center;
     padding: 0 30px;
+    position: relative;
     z-index: 0;
   }
 
   .nav-menu .menu-btn {
+    cursor: pointer;
     display: block;
     opacity: 1;
     pointer-events: auto;
-    cursor: pointer;
   }
   .nav-menu .menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    height: 300px;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     background: var(--White);
     bottom: -310px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
     left: 50%;
-    transform: translateX(-50%);
     opacity: 0;
+    position: absolute;
     pointer-events: none;
+    transform: translateX(-50%);
     transition: all 0.4s ease;
+    text-align: center;
+    width: 320px;
   }
   .nav-menu .menu::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
     background: var(--White);
+    content: '';
+    height: 20px;
     right: 4px;
+    position: absolute;
     top: -10px;
     transform: rotate(45deg);
+    width: 20px;
   }
   .menu-btn.active ~ .menu {
+    bottom: -370%;
     opacity: 1;
     pointer-events: auto;
-    bottom: -370%;
   }
   .menu ul {
     display: flex;
@@ -490,28 +482,28 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .ct-1 {
+  .content-1 {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
   }
-  .ct-1 .ct-text {
+  .content-1 .content-text {
     width: 100%;
     height: auto;
     text-align: center;
     padding: 50px 30px;
   }
-  .ct-1 .ct-text h1 {
+  .content-1 .content-text h1 {
     font-size: 30px;
     margin-bottom: 1rem;
   }
-  .ct-1 .ct-text p {
+  .content-1 .content-text p {
     color: var(--grayishblue);
     font-size: 17px;
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
-  .ct-1 .ct-text a {
+  .content-1 .content-text a {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -520,7 +512,7 @@ header {
     text-transform: uppercase;
     text-decoration: none;
   }
-  .ct-text a::before {
+  .content-text a::before {
     content: '';
     position: absolute;
     width: 120px;
@@ -533,41 +525,41 @@ header {
     opacity: 0;
     pointer-events: none;
   }
-  .ct-text a:hover::before {
+  .content-text a:hover::before {
     opacity: 0.6;
     pointer-events: auto;
     z-index: -1;
     bottom: 0;
   }
-  .ct-1 .ct-img {
+  .content-1 .content-img {
     width: 100%;
     height: 100%;
-    background: url(./images/mobile/image-transform.jpg) no-repeat center center;
+    background: url(../images/image-transform.jpg) no-repeat center center;
     background-size: cover;
   }
 
-  .ct-2 {
+  .content-2 {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
   }
-  .ct-2 .ct-text {
+  .content-2 .content-text {
     width: 100%;
     height: auto;
     text-align: center;
     padding: 50px 30px;
   }
-  .ct-2 .ct-text h1 {
+  .content-2 .content-text h1 {
     font-size: 30px;
     margin-bottom: 1rem;
   }
-  .ct-2 .ct-text p {
+  .content-2 .content-text p {
     color: var(--grayishblue);
     font-size: 17px;
     line-height: 1.5rem;
     margin-bottom: 2rem;
   }
-  .ct-2 .ct-text a {
+  .content-2 .content-text a {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -576,76 +568,74 @@ header {
     text-transform: uppercase;
     text-decoration: none;
   }
-  .ct-2 .ct-text a::before {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 5px;
+  .content-2 .content-text a::before {
     border-radius: 5px;
     background: var(--Softred);
     bottom: -5px;
+    content: '';
+    height: 5px;
     left: 50%;
     opacity: 0;
     pointer-events: none;
+    position: absolute;
     transition: all 0.3s ease;
+    width: 120px;
   }
-  .ct-text a:hover::before {
+  .content-text a:hover::before {
     opacity: 0.6;
     z-index: -1;
     bottom: 0;
   }
-  .ct-2 .ct-img {
+  .content-2 .content-img {
     width: 100%;
     height: 100%;
-    background: url(./images/mobile/image-stand-out.jpg) no-repeat center center;
+    background: url(../images/image-stand-out.jpg) no-repeat center center;
     background-size: cover;
   }
 
-  .ct-3 {
+  .content-3 {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
   }
-  .ct-3 .ct-3-l {
+  .content-3 .content-3-l {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
     width: 100%;
     height: 600px;
-    background: url(./images/mobile/image-graphic-design.jpg) no-repeat center
-      center;
+    background: url(../images/image-graphic-design.jpg) no-repeat center center;
     background-size: cover;
   }
-  .ct-3-l .ct-text-bg {
+  .content-3-l .content-text-bg {
     width: 100%;
     padding: 0 20px;
   }
 
-  .ct-3 .ct-3-r {
+  .content-3 .content-3-r {
     width: 100%;
     height: 600px;
-    background: url(/images/mobile/image-photography.jpg) no-repeat center
-      center;
+    background: url(../images/image-photography.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-align: center;
   }
-  .ct-3-r .ct-text-bg {
-    width: 100%;
+  .content-3-r .content-text-bg {
     padding: 0 20px;
+    width: 100%;
   }
 
   .client {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: auto;
     padding: 50px 20px;
     width: 100%;
-    height: auto;
   }
   .client h1 {
     font-size: 14px;
@@ -653,27 +643,27 @@ header {
   .client .client-profile-area {
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: auto;
     justify-content: space-between;
     margin-top: 3rem;
+    width: 100%;
   }
   .client-profile {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 10px;
     margin: 20px 0 30px 0;
+    padding: 0 10px;
+    text-align: center;
   }
   .client-profile .client-img {
-    width: 80px;
     height: 80px;
+    width: 80px;
   }
   .client-img img {
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
+    height: 100%;
+    width: 100%;
   }
   .client-profile .client-info {
     margin-top: 2rem;
@@ -693,41 +683,39 @@ header {
   }
 
   .grid-area {
-    width: 100%;
-    height: auto;
     display: grid;
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
   .grid-area .grid-item {
     height: 200px;
   }
   .grid-area .bg1 {
-    background: url(./images/mobile/image-gallery-milkbottles.jpg) no-repeat
-      center center;
+    background: url(./images/image-gallery-milkbottles.jpg) no-repeat center
+      center;
     background-size: cover;
   }
   .grid-area .bg2 {
-    background: url(./images/mobile/image-gallery-orange.jpg) no-repeat center
-      center;
+    background: url(./images/image-gallery-orange.jpg) no-repeat center center;
     background-size: cover;
   }
   .grid-area .bg3 {
-    background: url(./images/mobile/image-gallery-cone.jpg) no-repeat center
-      center;
+    background: url(./images/image-gallery-cone.jpg) no-repeat center center;
     background-size: cover;
   }
   .grid-area .bg4 {
-    background: url(./images/mobile/image-gallery-sugar-cubes.jpg) no-repeat
-      center center;
+    background: url(./images/image-gallery-sugar-cubes.jpg) no-repeat center
+      center;
     background-size: cover;
   }
 
   .ft-content {
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: 100%;
   }
   .ft-content .ft-menu {
     display: flex;
@@ -747,7 +735,7 @@ header {
     text-align: center;
   }
   .ft-contact li i {
-    font-size: 14px;
     color: var(--desaturatedcyan);
+    font-size: 14px;
   }
 }

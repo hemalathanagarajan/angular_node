@@ -1,12 +1,6 @@
 :root {
-  /* ### #Colors ###*/
-
-  /* ## Primary ## */
-
   --light-red: hsl(0, 100%, 68%);
   --moderate-red: hsl(1, 47%, 51%);
-
-  /* ## Neutral ## */
 
   --very-dark-desaturated-blue: hsl(230, 29%, 20%);
   --dark-grayish-blue: hsl(230, 11%, 40%);
@@ -14,23 +8,13 @@
   --light-grayish-blue: hsl(207, 33%, 95%);
   --white: hsl(0, 0%, 100%);
 
-  /* ### Typography ### */
-
-  /* ## Body Copy ## */
-
   --fs-body: 1.125rem;
 
-  /* ## font family ##  */
-  /* # Headings, Call-to-actions, Navigation */
   --ff-primary: 'Barlow Condensed', sans-serif;
-  /* # body */
   --ff-secondary: 'Barlow', sans-serif;
-  /* ##font weight  ##*/
   --fw-400: 400;
   --fw-700: 700;
 }
-
-/* reset  */
 
 html {
   box-sizing: border-box;
@@ -95,24 +79,17 @@ img {
   display: block;
 }
 
-/* general structure and style  */
-
 header,
 .hero {
   max-width: 90rem;
 }
 
-/* header  */
-
-/* nav  */
 .nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   padding: 2.375rem 2rem 4rem;
 }
-
-/* nav toggle and hamburger button  */
 
 .hamburger:nth-child(1),
 .hamburger:nth-child(2),
@@ -155,8 +132,6 @@ header,
   transform: rotate(-45deg);
   top: 5px;
 }
-
-/* nav list  */
 
 .nav__list {
   display: none;
@@ -204,10 +179,6 @@ header,
   text-decoration: none;
 }
 
-/* hero  */
-
-/* hero image  */
-
 .hero-img {
   overflow: hidden;
 }
@@ -216,8 +187,6 @@ header,
   max-width: 30.125rem;
   margin: 0 auto;
 }
-
-/* hero content  */
 
 .hero__content {
   max-width: 41.875rem;
@@ -301,15 +270,10 @@ header,
 }
 
 @media (min-width: 48em) {
-  /* general style and structure  */
-
   body::before {
     width: 48vw;
     height: 45vh;
   }
-
-  /* nav  */
-
   .nav {
     padding: 4rem 10.3125rem 7.75rem;
   }
@@ -359,9 +323,6 @@ header,
   .nav--btn {
     opacity: 50%;
   }
-
-  /* hero  */
-
   .hero {
     display: grid;
     grid-template-columns:
@@ -379,19 +340,12 @@ header,
         minmax(20.5rem, 1fr);
     }
   }
-
-  /* hero image  */
-
   .hero-img {
     grid-area: img;
   }
-
   .hero-img img {
     max-width: 916px;
   }
-
-  /* hero content  */
-
   .hero__content {
     grid-area: content;
     padding: 0 0 0 10.3125rem;

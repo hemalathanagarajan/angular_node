@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../themes/pingstyle.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
@@ -30,17 +30,7 @@
       </ul>
       <p>&copy; Copyright Ping. All rights reserved.</p>
     </div>
-    <script type="text/javascript">
-      function checkForm() {
-        var formEmail = document.myForm.email;
-        const emailValidation = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)?$/
-        if (formEmail.value.length === 0 || !formEmail.value.match(emailValidation)) {
-          alert("please enter a valid email");
-          formEmail.focus();
-          return;
-        }
-        document.myForm.submit();
-      }
+    <script src="../../script/pingstyle.js">
     </script>
 </body>
 
