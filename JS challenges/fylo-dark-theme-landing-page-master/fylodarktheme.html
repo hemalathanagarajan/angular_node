@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" type="image/png" sizes="32x32" href="assest/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,6 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../../themes/style.css">
-  <link rel="stylesheet" href="assest/media.css">
 </head>
 
 <body>
@@ -123,10 +122,14 @@
           <h3>Get early access today</h3>
           <p>It only takes a minute to sign up and our free starter tier is extremely generous.
             If you have any questions, our support team would be happy to help you.</p>
-          <div class="input">
-            <input type="email" placeholder="email@example.com" id="email" required>
-            <p id="p">Please enter a valid email address</p>
-            <button onclick="validate()" class="button1">Get Started For Free</button>
+          <div class="form-container">
+            <form>
+              <div class="input">
+                <input type="email" placeholder="email@example.com" id="email" required>
+                <div class="error-text">Please enter a valid email address</div>
+                <button class="button1"> GET started for free</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -176,14 +179,8 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript">
-    function validate() {
-      var email = document.getElementById("email").value;
-      if (email == null || email == "") {
-        document.getElementById("p").classList.toggle("show");
-      }
-    }
-  </script>
+  <script src="../../script/fylo.js"></script>
+
 </body>
 
 </html>
