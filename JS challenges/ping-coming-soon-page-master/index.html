@@ -11,16 +11,21 @@
 </head>
 
 <body>
-  <img src="images/logo.svg">
-  <h1>We are launching soon!</h1>
-  <h4>Subscribe and get notified</h4>
-  <form name="myForm" action="#">
-    <input type="email" class="email" placeholder=" Enter your Email Address">
-    <input type="submit" name="submit" value="NOTIFY ME" class="btn" onclick="checkForm();">
-  </form>
-
+  <div id="heading-section">
+    <img src="images/logo.svg">
+    <h1>We are launching soon!</h1>
+    <h4>Subscribe and get notified</h4>
   </div>
-  <div class="center">
+
+  <div class="form-container">
+    <form>
+      <input type="email" class="email" placeholder=" Enter your Email Address">
+      <div class="error" id="error-text">Please Provide a valid email address</div>
+      <button class="btn">NOTIFY ME</button>
+
+    </form>
+  </div>
+  <div class="center-image">
     <img src="images/illustration-dashboard.png">
     <div class="icons">
       <ul>

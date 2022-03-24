@@ -2,7 +2,6 @@
   --dark-blue: hsl(240, 38%, 20%);
   --grayish-blue: hsl(240, 18%, 77%);
 }
-
 * {
   box-sizing: border-box;
 }
@@ -11,25 +10,22 @@ html {
   font-family: 'Inter', sans-serif;
   font: 16px;
 }
-
 p {
-  font-weight: 300;
   font-size: 1.12rem;
+  font-weight: 300;
   line-height: 24px;
 }
-
 .container {
   align-items: center;
-  background: url(./images/pattern-curve.svg) no-repeat bottom;
   background-size: contain;
+  background: url(../images/pattern-curve.svg) no-repeat bottom;
   display: flex;
   justify-content: center;
   min-height: 100vh;
   padding: 2rem;
   width: 100%;
 }
-
-.slider {
+.slider-contents {
   display: block;
   height: 100%;
   margin: 0 auto;
@@ -37,7 +33,6 @@ p {
   position: relative;
   width: 80%;
 }
-
 .slide {
   align-items: center;
   display: flex;
@@ -46,52 +41,45 @@ p {
   text-align: center;
   width: 100%;
 }
-
 .slide-image {
-  background: url(./images/pattern-bg.svg) no-repeat bottom right;
   background-size: cover;
+  background: url(../images/pattern-bg.svg) no-repeat bottom right;
   height: 100%;
-  margin: 0 auto;
   margin-bottom: 2rem;
+  margin: 0 auto;
   padding: 1.8rem 2rem;
 }
-
 .slide-image img {
   height: 100%;
   width: 250px;
 }
-
 .slide-text {
-  background: url(./images/pattern-quotes.svg) no-repeat top center;
   background-size: 5rem;
+  background: url(../images/pattern-quotes.svg) no-repeat top center;
   padding: 1.5rem 0;
   z-index: 1;
 }
-
 .slide-text .text {
   margin-bottom: 1.2rem;
 }
-
 .author {
-  font-weight: 700;
   font-size: 0.9rem;
+  font-weight: 700;
   line-height: 20px;
 }
-
 .author span {
   color: var(--grayish-blue);
   display: block;
   font-weight: 500;
 }
-
 button {
   border: none;
 }
 .slider-buttons {
+  background-color: white;
+  border-radius: 25px;
   box-shadow: -15px 10px 30px 1px rgba(133, 133, 172, 0.75);
   height: 40px;
-  border-radius: 25px;
-  background-color: white;
   left: 50%;
   position: absolute;
   top: 260px;
@@ -99,35 +87,30 @@ button {
 }
 .prev,
 .next {
-  background: url(./images/icon-prev.svg) no-repeat center center;
   background-size: 10px;
+  background: url(../images/icon-prev.svg) no-repeat center center;
   height: 100%;
   position: absolute;
   width: 50%;
 }
-
 .prev:hover,
 .next:hover {
   box-shadow: 0 0.5em 0.5em -0.4em var(--dark-blue);
   cursor: pointer;
 }
-
 .next {
-  background: url(./images/icon-next.svg) no-repeat center center;
   background-size: 10px;
+  background: url(../images/icon-next.svg) no-repeat center center;
   left: 50%;
 }
-
 .John-slide {
   display: none;
 }
-
 .show {
   display: block;
 }
-
 @media only screen and (min-width: 1150px) {
-  .slider {
+  .slider-contents {
     height: 70%;
     max-width: 85%;
   }
@@ -136,14 +119,12 @@ button {
     text-align: left;
   }
   .slide-image {
-    padding: 3rem 4rem 3rem 2rem;
     margin-left: -2rem;
+    padding: 3rem 4rem 3rem 2rem;
   }
-
   .slide-image img {
     width: 540px;
   }
-
   .slide-text {
     background-position-x: 25%;
     background-size: 6rem;

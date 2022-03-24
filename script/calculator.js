@@ -1,4 +1,5 @@
 let result = document.getElementById('screen');
+
 let calculate = (number) => {
  result.value += number;
 };

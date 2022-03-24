@@ -1,24 +1,24 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --mainbgcolor: hsl(222, 26%, 31%);
-  --mainbg1color: hsl(0, 0%, 90%);
-  --mainbg2color: hsl(268, 75%, 9%);
-  --key1bg: hsl(0, 5%, 81%);
-  --key2bg: hsl(268, 71%, 12%);
+  --mainbg1bg: hsl(0, 5%, 81%);
+  --mainbg2bg: hsl(268, 71%, 12%);
+  --key1color: hsl(0, 0%, 90%);
+  --key2color: hsl(268, 75%, 9%);
 }
 body {
-  font-family: 'Spartan', sans-serif;
-  width: 100%;
+  align-items: center;
   background-color: var(--mainbgcolor);
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Spartan', sans-serif;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 body.active1 {
   background-color: var(--mainbg1color);
@@ -38,10 +38,10 @@ h3 {
   justify-content: flex-end;
 }
 .toggle p {
-  margin: 0 5px;
   color: white;
-  font-weight: 600;
   cursor: pointer;
+  font-weight: 600;
+  margin: 0 5px;
 }
 body.active1 .title h3 {
   color: black;
@@ -49,64 +49,64 @@ body.active1 .title h3 {
 body.active2 .title h3 {
   color: hsl(52, 100%, 62%);
 }
-.control p {
-  float: right;
-  margin-right: 70px;
+.theme-control p {
   color: white;
+  float: right;
   font-family: 'Spartan', sans-serif;
   font-weight: 600;
+  margin-right: 70px;
 }
-body.active1 .control p,
+body.active1 .theme-control p,
 body.active1 .toggle p {
   color: hsl(60, 10%, 19%);
 }
-body.active2 .control p,
+body.active2 .theme-control p,
 body.active2 .toggle p {
   color: hsl(52, 100%, 62%);
 }
-.control .box {
-  width: 60px;
-  height: 15px;
+.theme-control .box {
   background-color: hsl(224, 36%, 15%);
   border-radius: 30px;
+  cursor: pointer;
+  height: 15px;
+  margin-left: 390px;
   margin-left: 4px;
   position: relative;
-  margin-left: 390px;
-  cursor: pointer;
+  width: 60px;
 }
-body.active1 .control .box {
+body.active1 .theme-control .box {
   background-color: var(--key1bg);
 }
-.control #circle {
-  width: 15px;
-  height: 15px;
+.theme-control #circle {
   background-color: hsl(6, 63%, 50%);
-  position: absolute;
-  top: 0;
-  left: 0;
   border-radius: 30px;
   cursor: pointer;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
 }
-body.active1 .control #circle {
+body.active1 .theme-control #circle {
   background-color: hsl(25, 98%, 40%);
 }
-body.active2 .control #circle {
+body.active2 .theme-control #circle {
   background-color: hsl(176, 100%, 44%);
 }
-.screen {
+.result-screen {
   width: 450px;
 }
 #screen {
-  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 7px;
+  border: 0;
+  color: white;
+  font-size: 32px;
   height: 100px;
   margin: 10px 0;
-  text-align: right;
-  font-size: 32px;
-  background-color: hsl(224, 36%, 15%);
-  color: white;
-  border: 0;
   outline: none;
-  border-radius: 7px;
+  text-align: right;
+  width: 100%;
 }
 body.active1 #screen {
   background-color: hsl(0, 0%, 93%);
@@ -117,45 +117,45 @@ body.active2 #screen {
   color: hsl(52, 100%, 62%);
 }
 button {
-  width: 90px;
-  padding: 15px;
-  outline: none;
-  cursor: pointer;
-  border: 0;
   border-radius: 5px;
+  border: 0;
   box-shadow: 0px 3px 0px 0px hsl(224, 28%, 35%);
-  margin: 10px 10px;
-  font-size: 32px;
   color: black;
+  cursor: pointer;
+  font-size: 32px;
+  margin: 10px 10px;
+  outline: none;
+  padding: 15px;
+  width: 90px;
 }
 body.active1 button {
-  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
   background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
   color: hsl(60, 10%, 19%);
 }
 body.active2 button {
-  box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
   background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
   color: hsl(52, 100%, 62%);
 }
 .btn {
-  display: flex;
-  width: 450px;
-  flex-flow: wrap;
   background-color: hsl(224, 36%, 15%);
-  padding: 10px 5px;
-  margin: 8px 0;
   border-radius: 7px;
+  display: flex;
+  flex-flow: wrap;
+  margin: 8px 0;
+  padding: 10px 5px;
+  width: 450px;
 }
 body.active2 .btn {
   background-color: var(--key2bg);
 }
 .reset,
 .equal {
-  width: 200px;
   color: white;
   font-size: 16px;
   font-weight: 600;
+  width: 200px;
 }
 .reset,
 .del {
@@ -167,14 +167,14 @@ body.active2 .btn {
 }
 body.active1 .reset,
 body.active1 .del {
-  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
   background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 3px 0px 0px hsl(35, 11%, 61%);
   color: white;
 }
 body.active2 .reset,
 body.active2 .del {
-  box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
   background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 3px 0px 0px hsl(290, 70%, 36%);
   color: white;
 }
 .equal {
@@ -182,13 +182,13 @@ body.active2 .del {
   box-shadow: 0px 3px 0px 0px hsl(6, 70%, 34%);
 }
 body.active1 .equal {
-  box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
   background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 3px 0px 0px hsl(25, 99%, 27%);
   color: white;
 }
 body.active2 .equal {
-  box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
   background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 3px 0px 0px hsl(177, 92%, 70%);
   color: black;
 }
 .num {

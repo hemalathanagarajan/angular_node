@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../../themes/intro-componentstyle.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <div class="split-up">
+    <div class="left-column">
+      <h1> Learn to code by<br> watching others</h1>
+      <p>See how experienced developers solve problems in real-time.<br> Watching scripted tutorials is great,
+        but understanding how <br>developers think is invaluable. </p>
+    </div>
+    <div class="right-column">
+      <div class="top-card">
+        <p>Try it free 7 days <span> then $20/mo. thereafter</span></p>
+      </div>
+      <div class="form-container">
+        <form action="#">
+          <div class="input-group">
+            <label for="first-name">First Name</label>
+            <input name='first-name' id="first-name" type="text" placeholder="First Name">
+            <img src="./images/icon-error.svg" class="error-icon" alt=" firstname error">
+            <p class="error-text">First Name cannot be empty</p>
+          </div>
+          <div class="input-group">
+            <label for="last-name">last Name</label>
+            <input name='last-name' id="last-name" type="text" placeholder="Last Name">
+            <img src="./images/icon-error.svg" class="error-icon" alt="lastname error">
+            <p class="error-text">Last Name cannot be empty</p>
+          </div>
+          <div class="input-group">
+            <label for="Email">Email Address</label>
+            <input name='Email' id="Email" value="" type="email" placeholder="Email Address">
+            <img src="./images/icon-error.svg" class="error-icon" alt="email error">
+            <p class="error-text">Looks like this is not email</p>
+          </div>
+          <div class="input-group">
+            <label for="password">Password Address</label>
+            <input name='password' id="password" value="" type="password" placeholder="Password">
+            <img src="./images/icon-error.svg" class="error-icon" alt="password error">
+            <p class="error-text">Password cannot be empty</p>
+          </div>
+          <button class="btn1" type="submit">CLAIM YOUR FREE TRAIL</button>
+          <h5>By clicking the button, you are agreeing to our <span>Terms and Services</span>
+          </h5>
+      </div>
+
+
+      <script src="./intro.js"></script>
+      <!-- <script type="text/javascript">
+    function checkForm() {
+      var formName = document.myForm.fname;
+      var formLName = document.myForm.lname;
+      var formEmail = document.myForm.email;
+
+      if (formName.value.indexOf(" ") == -1) {
+        alert("please enter first  name");
+        formName.focus();
+        return;
+
+      }
+      if (formLName.value = "/^[a-zA-Z]+ [a-zA-Z]+$/") {
+        alert("please enter last name");
+        formLName.focus();
+        return;
+      }
+
+      if (formEmail.value.indexOf("@") == -1 || formEmail.value.indexOf(".") == -1) {
+        alert("please enter a valid email");
+        formEmail.focus();
+        return;
+      }
+
+
+
+      document.myForm.submit();
+    }
+  </script> -->

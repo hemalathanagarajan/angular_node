@@ -1,210 +1,188 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-
 :root {
+  --body-font: 'Josefin Sans', sans-serif;
+  --dark-grayish-red: hsl(0, 6%, 24%);
   --desaturated-red: hsl(0, 36%, 70%);
   --soft-red: hsl(0, 93%, 68%);
-  --dark-grayish-red: hsl(0, 6%, 24%);
-  --body-font: 'Josefin Sans', sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 body {
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll;
   box-sizing: border-box;
   font-family: var(--body-font);
 }
-
 .main-container {
   display: grid;
   grid-template-columns: 57.5% 1fr;
   min-height: 100vh;
 }
-
 .logo-area {
-  width: 100%;
   height: 2.3rem;
+  width: 100%;
 }
 .logo {
-  background-image: url('images/logo.svg');
+  background-image: url('../images/logo.svg');
   background-repeat: no-repeat;
   background-size: 33%;
   height: 2.3rem;
   width: 100%;
 }
-
-/* Info Section */
 .info-section {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 4rem 10.2rem;
-  gap: 1rem;
-  background: url('images/bg-pattern-desktop.svg'),
-    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   background-size: cover;
+  background: url('../images/bg-pattern-desktop.svg');
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
   justify-content: space-evenly;
+  padding: 4rem 10.2rem;
+  position: relative;
+  background-color: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
 }
-
 h1 {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  display: inline;
   color: var(--dark-grayish-red);
+  display: inline;
+  font-size: 4rem;
+  font-weight: 600;
   letter-spacing: 1.1rem;
   line-height: 4.2rem;
+  text-transform: uppercase;
 }
-
 h1 span {
   color: var(--desaturated-red);
   font-weight: 300;
 }
-
 .info-section p {
-  position: relative;
   color: var(--desaturated-red);
-  line-height: 1.8rem;
   font-weight: 400;
-  width: 85%;
+  line-height: 1.8rem;
   padding-top: 1.2rem;
+  position: relative;
+  width: 85%;
 }
 .text-section {
   max-width: 100%;
 }
-/* Input Section */
 .input-section {
-  position: relative;
-  width: 90%;
-  height: 3rem;
   display: flex;
   flex-direction: row;
+  height: 3rem;
   margin-top: 2.6rem;
+  position: relative;
+  width: 90%;
 }
-
 .input-field {
   border-color: var(--desaturated-red);
-  border-width: 1px;
+  border-radius: 25px;
   border-style: solid;
-  border-radius: 25px;
-  width: 100%;
+  border-width: 1px;
+  overflow: hidden;
   padding: 1.7rem;
-  overflow: hidden;
+  width: 100%;
 }
-
 .btn {
-  cursor: pointer;
-  position: absolute;
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
-  top: 0;
-  right: 0;
+  background-repeat: no-repeat;
   background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-  background-repeat: no-repeat;
-  width: 23%;
-  height: 3.5rem;
-  border: none;
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  height: 3.5rem;
+  justify-content: center;
   overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23%;
 }
-
 .arrow-img {
-  background-image: url('images/icon-arrow.svg');
-  background-repeat: no-repeat;
+  background-image: url('../images/icon-arrow.svg');
   background-position: center;
-  width: 2rem;
+  background-repeat: no-repeat;
   height: 2rem;
   margin: 0 auto;
+  width: 2rem;
 }
-
 .error-msg {
-  display: none;
-  position: absolute;
   color: var(--soft-red);
-  top: 130%;
-  left: 5%;
+  display: none;
   font-size: 0.8rem;
+  left: 5%;
+  position: absolute;
+  top: 130%;
 }
-
 .error {
   display: none;
-  position: absolute;
-  width: 3.5rem;
   height: 3.5rem;
+  position: absolute;
   right: 25%;
+  width: 3.5rem;
 }
 .error-icon {
-  background-image: url('images/icon-error.svg');
-  background-repeat: no-repeat;
+  background-image: url('../images/icon-error.svg');
   background-position: center;
-  width: 3.5rem;
+  background-repeat: no-repeat;
   height: 3.5rem;
+  width: 3.5rem;
 }
-
-/* IMG Section */
 .img-section {
-  background-image: url('images/hero-desktop.jpg');
+  background-image: url('../images/hero-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
 }
-
 @media (hover: hover) {
   .btn:hover {
-    background: transparent;
-    background-color: hsl(0, 80%, 86%);
-    width: 24%;
-    height: 3.7rem;
     -webkit-box-shadow: -1px 16px 17px -6px rgba(0, 0, 0, 0.51);
+    background-color: hsl(0, 80%, 86%);
+    background: transparent;
     box-shadow: -1px 16px 17px -6px rgba(0, 0, 0, 0.51);
+    height: 3.7rem;
+    width: 24%;
   }
 }
-
 @media screen and (max-width: 1025px) {
   .main-container {
     grid-template-columns: 50% 1fr;
   }
 }
-
 @media screen and (max-width: 801px) {
   .info-section {
     display: initial;
   }
-
   .main-container {
     grid-template-columns: 1fr;
     grid-template-rows: 15% 50% 1fr;
+
     grid-template-areas:
       'icon'
       'hero'
       'info';
   }
-
   .img-section {
     grid-area: hero;
   }
-
   .logo-area {
-    position: absolute;
     grid-area: icon;
-    top: 5%;
     left: 5%;
+    position: absolute;
+    top: 5%;
     width: 70%;
   }
   .logo {
     height: 4rem;
   }
-
   .info-section {
     grid-area: info;
-    position: initial;
     padding: 5rem 2rem;
+    position: initial;
   }
   h1 {
     font-size: 2.5rem;
