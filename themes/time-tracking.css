@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Dark-blue: hsl(224, 46%, 9%);
+  --Hover_blue: hsl(236, 41%, 34%);
+  --Light-blue: hsl(236, 44%, 20%);
+  --Light_orange: hsl(15, 100%, 70%);
+  --Light_red: hsl(348, 100%, 68%);
+  --Lime_green: hsl(145, 58%, 55%);
+  --Soft_blue: hsl(195, 74%, 62%);
+  --Soft_orange: hsl(43, 84%, 65%);
+  --Violet: hsl(264, 64%, 52%);
+}
+* {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  a:active,
+  a:hover {
+    text-decoration: none;
+  }
+  report-information:hover {
+    background-color: var(--Hover_blue);
+  }
+
+  main {
+    background-color: var(--Dark-blue);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    padding: 4rem;
+  }
+  a,
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: fit-content;
+  }
+  .container .report-perfil-container {
+    margin-right: 1.5em;
+    width: 300px;
+  }
+  .container .report-perfil {
+    background-color: var(--Blue);
+    border-radius: 1em;
+    padding-bottom: 5em;
+    padding: 1.5em;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  .container .report-perfil img {
+    border-radius: 100%;
+    border: solid white 4px;
+    margin-bottom: 2em;
+    width: 100px;
+  }
+  .container .time-option {
+    background-color: var(--Light-blue);
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.7em;
+    padding-top: 2.8em;
+    padding: 1.5em;
+    transform: translateY(-1em);
+    z-index: 1;
+  }
+  .container .time-option button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    margin: 0.5em 0;
+    outline: none;
+    text-align: left;
+  }
+  .container .reports-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .reports-container {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 800px;
+  }
+  .report-information {
+    background-color: var(--Light-blue);
+    border-radius: 1em;
+    cursor: pointer;
+    padding: 1.5em 2em;
+    transform: translateY(-0.8em);
+    transition: 0.3s ease all;
+  }
+  .report-information .title {
+    display: flex;
+    font-size: 1.1em;
+    justify-content: space-between;
+    width: 100;
+  }
+  .report-information h2 {
+    font-size: 4em;
+    font-weight: 200;
+    margin: 0.4em 0;
+  }
+  .cover-page {
+    border-radius: 1em 1em 0 0;
+    height: 50px;
+  }
+  .work .cover-page {
+    background-color: var(--Light_orange);
+    background-image: url('../images/icon-work.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .play .cover-page {
+    background-color: var(--Soft_blue);
+    background-image: url('../images/icon-play.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .study .cover-page {
+    background-color: var(--Light_red);
+    background-image: url('../images/icon-study.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .exercise .cover-page {
+    background-color: var(--Lime_green);
+    background-image: url('../images/icon-exercise.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .social .cover-page {
+    background-color: var(--Violet);
+    background-image: url('../images/icon-social.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .self-care .cover-page {
+    background-color: var(--Soft_orange);
+    background-image: url('../images/icon-self-care.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+.last-time {
+  color: hsl(0, 1%, 72%);
+}
+.text-muted {
+  color: hsl(0, 1%, 72%);
+}
+.text-muted:hover {
+  color: white;
+}
+.big-text {
+  font-size: 3em;
+  font-weight: 100;
+}
+@media screen and (max-width: 900px) {
+  report-information:hover {
+    background-color: var(--Hover_blue);
+  }
+
+  main {
+    background-color: var(--Dark-blue);
+  }
+  .big-text {
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .container .report-perfil-container {
+    margin-right: 1.5em;
+    width: 100%;
+  }
+  .container .report-perfil {
+    background-color: var(--Blue);
+    border-radius: 1em;
+    display: flex;
+    padding: 1em;
+    position: relative;
+    z-index: 2;
+  }
+  .container .report-perfil img {
+    border-radius: 100%;
+    border: solid white 4px;
+    height: 100px;
+    margin-right: 1em;
+    width: 100px;
+  }
+  .container .report-perfil > div {
+    margin-top: 1.4em;
+  }
+  .container .time-option {
+    background-color: var(--Light-blue);
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1.7em;
+    padding-top: 2.8em;
+    padding: 1.5em;
+    transform: translateY(-1em);
+  }
+  .container .time-option button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    margin: 0.5em 0;
+    outline: none;
+    text-align: left;
+  }
+  .container .reports-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .report-information {
+    background-color: var(--Light-blue);
+    border-radius: 1em;
+    cursor: pointer;
+    padding: 1.5em 2em;
+    transform: translateY(-0.8em);
+    transition: 0.3s ease all;
+  }
+  .report-information .title {
+    display: flex;
+    font-size: 1.1em;
+    justify-content: space-between;
+    width: 100;
+  }
+  .report-information h2 {
+    display: inline;
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0.5em 0;
+  }
+  .report-information p {
+    display: inline;
+    float: right;
+    font-size: 0.9em;
+  }
+  .last-time {
+    margin-top: 1.9em;
+  }
+  .cover-page {
+    border-radius: 1em 1em 0 0;
+    height: 50px;
+  }
+  .work .cover-page {
+    background-color: var(--Light_orange);
+    background-image: url('../images/icon-work.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .play .cover-page {
+    background-color: var(--Soft_blue);
+    background-image: url('../images/icon-play.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .study .cover-page {
+    background-color: var(--Light_red);
+    background-image: url('../images/icon-study.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .exercise .cover-page {
+    background-color: var(--Lime_green);
+    background-image: url('../images/icon-exercise.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .social .cover-page {
+    background-color: var(--Violet);
+    background-image: url('../images/icon-social.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .self-care .cover-page {
+    background-color: var(--Soft_orange);
+    background-image: url('../images/icon-self-care.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}

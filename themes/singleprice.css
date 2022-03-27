@@ -1,134 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-html, body{
-    min-height: 100vh;
+html,
+body {
+  min-height: 100vh;
 }
-
-:root{
-    --cyan-primary: hsl(179, 62%, 43%);
-    --yellow-primary: hsl(71, 73%, 54%);
-    --gray-neutral: hsl(204, 43%, 93%);
-    --gray-blue:hsl(218, 22%, 67%);
+:root {
+  --cyan-primary: hsl(179, 62%, 43%);
+  --gray-blue: hsl(218, 22%, 67%);
+  --gray-neutral: hsl(204, 43%, 93%);
+  --yellow-primary: hsl(71, 73%, 54%);
 }
-
-body{
-    background-color: var(--gray-neutral);
-    padding: 1em;
+body {
+  background-color: var(--gray-neutral);
+  padding: 1em;
 }
-
-main{
-    max-width: 650px;
-    border-radius: 10px;
-    overflow: hidden;
+main {
+  border-radius: 10px;
+  max-width: 650px;
+  overflow: hidden;
 }
-
-main > div{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+main > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-
-.flex-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.flex-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-section{
-    padding: 3em;
-    box-sizing: border-box;
-    min-width: 250px;
+section {
+  box-sizing: border-box;
+  min-width: 250px;
+  padding: 3em;
 }
-
-.request{
-    background-color: white;
+.request {
+  background-color: white;
 }
-
-.request > h1{
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    color: var(--cyan-primary);
+.request > h1 {
+  color: var(--cyan-primary);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
 }
-
-.request > h3{
-    color: var(--yellow-primary);
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
-    margin-top: 1em;
+.request > h3 {
+  color: var(--yellow-primary);
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
 }
-
-.request > p{
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: var(--gray-blue);
-    margin-top: 1em;
+.request > p {
+  color: var(--gray-blue);
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-top: 1em;
 }
-
 .subscription,
-.aboutreason{
-    flex: 1 1 50%;
-    color: white;
+.aboutreason {
+  color: white;
+  flex: 1 1 50%;
 }
-
-.subscription{
-    background-color: hsl(179, 62%, 43%);
+.subscription {
+  background-color: hsl(179, 62%, 43%);
 }
-
-.subscription *, .aboutreason *{
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
+.subscription *,
+.aboutreason * {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
 }
-
-.subscription >h3 ~ p{
-    margin-top: 1em;
+.subscription > h3 ~ p {
+  margin-top: 1em;
 }
-
-
-
-.aboutreason{
-    background-color: hsla(179, 62%, 43%, 0.9);
+.aboutreason {
+  background-color: hsla(179, 62%, 43%, 0.9);
 }
-
-.aboutreason > p{
-    margin-top: 1em;
-    font-size: 13px;
-    color: hsla(0, 0%, 100%, 0.6);
-    line-height: 1.5em;
+.aboutreason > p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 13px;
+  line-height: 1.5em;
+  margin-top: 1em;
 }
-
-.currency{
-    color: var(--gray-neutral);
+.currency {
+  color: var(--gray-neutral);
 }
-.currency > span{
-    font-size: 2em;
-    vertical-align: middle;
-    margin-right: 0.4em;
-    font-weight: 700;
-    color: white;
+.currency > span {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 0.4em;
+  vertical-align: middle;
 }
-
-.currency + p{
-    font-size: 15px;
+.currency + p {
+  font-size: 15px;
 }
-
-button{
-    width: 100%;
-    height: 4em;
-    border-radius: 5px;
-    border-style: none;
-    background-color: var(--yellow-primary);
-    color: white;
-    box-shadow:  1rem 1rem 2rem hsl(179deg 62% 28% / 50%);
-    margin-top: 2em;
+button {
+  background-color: var(--yellow-primary);
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 1rem 1rem 2rem hsl(179deg 62% 28% / 50%);
+  color: white;
+  height: 4em;
+  margin-top: 2em;
+  width: 100%;
 }
-
-footer{
-    margin-top: 4em;
-    font-size: 14px;
-    text-align: center;
+footer {
+  font-size: 14px;
+  margin-top: 4em;
+  text-align: center;
 }

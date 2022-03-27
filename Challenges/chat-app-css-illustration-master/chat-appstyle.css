@@ -29,10 +29,8 @@ body {
   background-color: var(--color-white);
   display: grid;
   min-height: 100vh;
-  overflow: hidden;
   padding-top: 60px;
   position: relative;
-  z-index: -2;
 }
 .main::before {
   background-image: linear-gradient(
@@ -47,7 +45,6 @@ body {
   right: 50%;
   top: -450px;
   width: 570px;
-  z-index: -1;
 }
 .main__mobile {
   background-color: var(--color-white-gray);
@@ -172,7 +169,7 @@ body {
   justify-content: space-between;
   margin: calc(2 * var(--space-chat)) var(--space-chat);
 }
-.keyboard input[type='text'] {
+.keyboardzzz input[type='text'] {
   border-radius: 10px 0 0 10px;
   border: none;
   flex-grow: 1;
@@ -216,7 +213,6 @@ body {
     position: absolute;
     right: -260px;
     width: 570px;
-    z-index: -1;
   }
   .main::before {
     height: 100vh;

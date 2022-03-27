@@ -1,12 +1,11 @@
 const dailyBtn = document.querySelector('#daily-btn');
 const weeklyBtn = document.querySelector('#weekly-btn');
 const mothlyBtn = document.querySelector('#monthly-btn');
-
 const hours = document.querySelectorAll('.hours');
 const lastTime = document.querySelectorAll('.last-time');
 
 function dailyData(){
-  fetch('https://mathuri.vercel.app/js-challenges/time-tracking-dashboard/data.json')
+  fetch('https://angular-node-eight.vercel.app/JS%20challenges/time-tracking-dashboard-main/data.json')
     .then(response => response.json())
     .then(data => {
       hours.forEach((e,i) => {
@@ -17,7 +16,7 @@ function dailyData(){
 }
 
 function weeklyData(){
-  fetch('https://mathuri.vercel.app/js-challenges/time-tracking-dashboard/data.json')
+  fetch('https://angular-node-eight.vercel.app/JS%20challenges/time-tracking-dashboard-main/data.json')
     .then(response => response.json())
     .then(data => {
       hours.forEach((e,i) => {
@@ -28,7 +27,7 @@ function weeklyData(){
 }
 
 function mothlyData(){
-  fetch('https://mathuri.vercel.app/js-challenges/time-tracking-dashboard/data.json')
+  fetch('https://angular-node-eight.vercel.app/JS%20challenges/time-tracking-dashboard-main/data.json')
     .then(response => response.json())
     .then(data => {
       hours.forEach((e,i) => {
@@ -40,23 +39,14 @@ function mothlyData(){
 
 
 dailyBtn.addEventListener('click', () => {
-  dailyBtn.classList.remove('text-muted')
-  weeklyBtn.classList.add('text-muted')
-  mothlyBtn.classList.add('text-muted')
-  dailyData()
+  dailyData();
 })
 
 weeklyBtn.addEventListener('click', () => {
-  weeklyBtn.classList.remove('text-muted')
-  mothlyBtn.classList.add('text-muted')
-  dailyBtn.classList.add('text-muted')
-  weeklyData()
+  weeklyData();
 })
 
 mothlyBtn.addEventListener('click', () => {
-  mothlyBtn.classList.remove('text-muted')
-  dailyBtn.classList.add('text-muted')
-  weeklyBtn.classList.add('text-muted')
-  mothlyData()
+  mothlyData();
 })
 

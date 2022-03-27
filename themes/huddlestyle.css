@@ -167,13 +167,13 @@ footer:before {
   background: url('../images/bg-section-top-desktop-1.svg') no-repeat;
 }
 .grow:after {
-  background: url('./images/bg-section-bottom-desktop-1.svg') no-repeat;
+  background: url('../images/bg-section-bottom-desktop-1.svg') no-repeat;
 }
 .user:before {
-  background: url('./images/bg-section-top-desktop-2.svg') no-repeat;
+  background: url('../images/bg-section-top-desktop-2.svg') no-repeat;
 }
 .user:after {
-  background: url('./images/bg-section-bottom-desktop-2.svg') no-repeat;
+  background: url('../images/bg-section-bottom-desktop-2.svg') no-repeat;
 }
 .left,
 .right {
@@ -198,7 +198,7 @@ footer {
   position: relative;
 }
 footer:before {
-  background: url('./images/bg-footer-top-desktop.svg') no-repeat;
+  background: url('../images/bg-footer-top-desktop.svg') no-repeat;
 }
 
 .icon {
