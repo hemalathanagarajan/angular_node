@@ -1,0 +1,147 @@
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Very-DarkBlue: hsl(209, 33%, 12%);
+    --main-font: 'Libre Franklin', sans-serif;
+    --ray: hsl(0, 0%, 59%);
+  }
+  * {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    margin: 50px 0 10px 650px;
+  }
+  .head h1 {
+    margin-bottom: 10px;
+    margin-left: 500px;
+  }
+  .head h1 span {
+    color: var(--ray);
+    font-weight: 500;
+  }
+  .head h3 {
+    color: var(--Very-DarkBlue);
+    margin-bottom: 18px;
+    margin-left: 550px;
+  }
+  .dashboard img {
+    margin-left: 420px;
+    margin-top: 20px;
+    width: 600px;
+  }
+  .mail {
+    display: flex;
+    margin-left: 450px;
+  }
+  .mail input {
+    border-radius: 25px;
+    border: 1px solid var(--Pale-Blue);
+    height: 50px;
+    margin-right: 20px;
+    outline: none;
+    padding: 15px;
+    width: 280px;
+  }
+  .mail input::placeholder {
+    color: var(--Pale-Blue);
+  }
+  .mail button {
+    background-color: var(--Blue);
+    border-radius: 25px;
+    border: 2px solid var(--Blue);
+    box-shadow: 0px 2px 4px var(--Pale-Blue);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    height: 45px;
+    outline: none;
+    width: 150px;
+  }
+  .icon {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 650px;
+  }
+  .icon i {
+    border-radius: 50%;
+    border: 1px solid var(--Pale-Blue);
+    color: var(--Blue);
+    margin: 0 10px;
+    padding: 8px;
+    width: 30px;
+  }
+  i:hover {
+    background-color: var(--Blue);
+    color: white;
+    cursor: pointer;
+  }
+  .rights {
+    color: var(--ray);
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 630px;
+  }
+  .error-text {
+    color: var(--Light-Red);
+    display: none;
+    font-size: 12px;
+    margin-left: -430px;
+    margin-top: 60px;
+  }
+  .mail.error input {
+    border: 2px solid var(--Light-Red);
+  }
+  .mail.error .error-text {
+    display: block;
+  }
+  @media only screen and (max-width: 783px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    .logo {
+      margin: 50px 0 10px 70px;
+    }
+    .head h1 {
+      margin-bottom: 10px;
+      margin-left: 70px;
+    }
+    .head h3 {
+      margin-left: 70px;
+    }
+    .dashboard img {
+      margin-left: 20px;
+      margin-top: 80px;
+      width: 350px;
+    }
+    .mail {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+    }
+    .mail input {
+      height: 50px;
+      margin-bottom: 20px;
+      width: 300px;
+    }
+    .mail button {
+      height: 45px;
+      width: 300px;
+    }
+    .icon {
+      margin-bottom: 10px;
+      margin-left: 120px;
+    }
+    .rights {
+      margin-bottom: 10px;
+      margin-left: 90px;
+    }
+    .error-text {
+      margin-left: 10px;
+      margin-top: -60px;
+    }
+  }
