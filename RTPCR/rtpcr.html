@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rt-pcr</title>
+    <link rel="stylesheet" href="./rtp.css">
+</head>
+
+<body>
+    <section>
+        <form id="form">
+            <h1>RT-PCR TEST</h1>
+
+            <div><label>Name:</label>
+                <input name="name" type="text" size="30" id="name" placeholder="Enter full name" autofocus>
+            </div>
+            <div>
+                <label>Aadhar number:</label>
+                <input name="aadhar" type="number" size="12" id="aadhar" placeholder="XXXX XXXX XXXX">
+            </div>
+            <div>
+                <label>DOB:</label>
+                <input type="date" placeholder="Enter your date of birth" id="dob">
+            </div>
+            <div>
+                <label>city:</label>
+                <input type="text" placeholder="Enter your city" id="city">
+            </div>
+            <div>
+                <label>Test date:</label>
+                <input type="date" placeholder="Date of test you have taken" id="t-date">
+            </div>
+            <div>
+                <label>Test time:</label>
+                <input type="time" placeholder="Time of test you have taken" id="t-time">
+            </div>
+            <div>
+                <label>Result:</label>
+                <input type="radio" name="result" id="positive" value="positive">positive
+                <input type="radio" name="result" id="negative" value="negative">negative
+            </div>
+            <div>
+                <label>Lab name:</label>
+                <input type="text" placeholder="Enter lab name" id="lab">
+            </div>
+            <div>
+                <label>Report number:</label>
+                <input type="number" placeholder="Enter report number" id="rpt-no">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+            </div>
+            <div>
+                <button type="button" value="add" onclick="AddRow()">Add</button>
+            </div>
+            <div><button type="button" value="view" onclick="view()">View</button>
+            </div>
+            <div><button type="button" value="reset" onclick="reset()">Reset</button>
+            </div>
+
+        </form>
+
+    </section>
+    <div id="container">
+        <table id="show" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Aadhar number</th>
+                    <th>Date of Birth</th>
+                    <th>city</th>
+                    <th>test date</th>
+                    <th>test time</th>
+                    <th>result</th>
+                    <th>Lab Name</th>
+                    <th>Report Number</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="bar">
+        Search: <input type="text" id="search" onkeyup="myFunction()" placeholder="search for aadhar">
+    </div>
+    <script src="./element-new.js"></script>
+
+
+
+</body>
+
+</html>

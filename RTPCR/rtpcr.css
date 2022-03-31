@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(229, 57%, 11%);
+}
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+form {
+  margin-left: 30%;
+  margin-right: 20px;
+  width: 60%;
+}
+.add-button {
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  color: whitesmoke;
+  background-color: green;
+
+  margin-left: 30%;
+}
+#name,
+#aadhar-card,
+#dob,
+#city,
+#date-of-test,
+#time-of-test,
+#result,
+#lab-name,
+#report-number {
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 30%;
+  height: 30px;
+  color: black;
+}
+#male,
+#female {
+  margin-left: 10%;
+}
+label {
+  width: 200px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+label,
+input {
+  display: inline-block;
+  color: white;
+}
+table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+table th {
+  border: 2px solid black;
+  height: 50px;
+}
+/* ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  width: 1200px;
+  margin-left: 80px;
+  background-color: rgb(14, 13, 13);
+  color: white;
+}
+ul li {
+  border: 1px solid rgb(248, 241, 241);
+} */

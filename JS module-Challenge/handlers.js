@@ -7,3 +7,5 @@
          )
          .join('');
          }
+
+// its erforms any list related to currency related process in this file         

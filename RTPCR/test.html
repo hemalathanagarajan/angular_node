@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1 class="heading">RT-PCR Testing Form</h1>
+    <form action="#" id="formSubmission" method="get">
+        <div class="form-container">
+            <div class="name">
+                <label for="name">
+                    Name:
+                </label>
+                <input type="text" placeholder="Enter your Name" id="name" autofocus>
+            </div>
+            <div class="gender">
+                <label for="gender">Gender:</label>
+                <input title="select gender" type="radio" name="gender" id="gender" value="male">
+                <label for="c1">Male</label>
+                <input title="select gender" type="radio" name="gender" id="gender" value="female">
+                <label for="c2">Female</label>
+                <input title="select gender" type="radio" name="gender" id="gender" value="other">
+                <label for="c3">Other</label>
+            </div>
+            <div class="aadhar">
+                <label>
+                    Aadhar Number:
+                </label>
+                <input type="text" name="text aadhar-number" placeholder="XXXX XXXX XXXX" required
+                    pattern="[0-9]{4} [0-9]{4} [0-9]{4}" id="aadhar" maxlength="14">
+            </div>
+            <div class="dob">
+                <label>
+                    Date of birth:
+                </label>
+                <input title="enter your date of birth" id="dob" type="date" />
+            </div>
+            <div class="city">
+                <label>
+                    City:
+                </label>
+                <input type="text" placeholder="Enter your city" id="city" name="text city" />
+            </div>
+            <div class="dot">
+                <label>
+                    Date of Test:
+                </label>
+                <input title="enter your date of test" id="dot" type="date" />
+            </div>
+            <div class="tot">
+                <label>
+                    Time of Test:
+                </label>
+                <input title="enter your time of test" id="tot" type="time" />
+            </div>
+            <div class="result">
+                <label>Result:</label>
+                <input title="select result" type="radio" id="result" name="result" value="positive">
+                <label>Positive</label>
+                <input title="select result" type="radio" id="result" name="result" value="negative">
+                <label>Negative</label>
+            </div>
+            <div class="lab-name">
+                <label>
+                    Lab Name:
+                </label>
+                <input type="text" name="text  lab-name" placeholder="Enter the Lab Name" id="lab-name">
+            </div>
+            <div class="report-num">
+                <label>
+                    Report Number:
+                </label>
+                <input type="text" name="text report-number" id="report-num" pattern="[A-Za-z]*[0-9]*[A-Za-z]*"
+                    placeholder="Enter your Report Number">
+            </div>
+            <div>
+                <button class="add">Add</button>
+            </div>
+        </div>
+    </form>
+    <ul id="data">
+        <li>Name</li>
+        <li>Gender</li>
+        <li>Aadhar Number</li>
+        <li>Date of birth</li>
+        <li>City</li>
+        <li>Date of Test</li>
+        <li>Time of Test</li>
+        <li>Result</li>
+        <li>Lab Name</li>
+        <li>Report Number</li>
+    </ul>
+    <script src="./adddata.js"></script>
+</body>
+
+</html>

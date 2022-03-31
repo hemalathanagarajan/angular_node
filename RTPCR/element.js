@@ -1,0 +1,12 @@
+ import { validate } from "./form-check.js";
+ var name  = document.getElementById("name").value;
+var aadhar  = document.getElementById("aadhar-card").value;
+var dob = document.getElementById("dob").value;
+var city = document.getElementById("city").value;
+var date  = document.getElementById("date-of-test").value;
+var time  = document.getElementById("time-of-test").value;
+var result = document.getElementById("result").value;
+var lab  = document.getElementById("lab-name").value;
+var report = document.getElementById("report-number").value;
+var male  = document.getElementById("male").value;
+var female  = document.getElementById("female").value;

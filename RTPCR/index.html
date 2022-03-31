@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rtpcr.css">
+</head>
+
+<body>
+    <h1>RTPCR - TEST</h1>
+    <div class="container">
+        <form action="#" method="post" name="form" id="form-content">
+            <div>
+                <label name="lblname">
+                    Person Name:
+                </label>
+                <input type="text" name="txtname" placeholder="enter your name here" autofocus autocomplete="off"
+                    id="name">
+            </div><br>
+            <div>
+                <label name="lblaadhar">
+                    Aadhar:
+                </label>
+
+                <input type="text" name="aadhar" placeholder="XXXX XXXX XXXX" required
+                    pattern="[0-9]{4} [0-9]{4} [0-9]{4}" maxlength="14" id="aadhar-card">
+            </div><br>
+            <div>
+                <label name="lblDOB">
+                    DOB:
+                </label>
+                <input type="date" name="txtdob" placeholder="enter your DOB here" id="dob" required>
+            </div><br>
+            <div>
+                <label name="lblcity">
+                    City:
+                </label>
+                <input type="text" name="txtcity" placeholder="enter your city here" id="city" required>
+            </div><br>
+            <div>
+                <label name="lbldate">
+                    Date of TEST:
+                </label>
+                <input type="date" name="txtdate" placeholder="enter date of test here" id="date-of-test" required>
+            </div><br>
+            <div>
+                <label name="lbltime">
+                    Time of TEST:
+                </label>
+                <input type="time" name="txttime" placeholder="enter time of test here" id="time-of-test" required>
+            </div><br>
+            <div>
+                <label name="lblresult">
+                    Result:
+                </label>
+                <input type="text" name="result" placeholder="enter Result" id="result" required>
+            </div><br>
+            <div>
+                <label name="lblLab">
+                    LAB Name:
+                </label>
+                <input type="text" name="lab" placeholder="enter Lab name" id="lab-name" required>
+            </div><br>
+            <div>
+                <label name="lblRep">
+                    Report Number:
+                </label>
+                <input type="number" name="report-number" placeholder="enter Report number" id="report-number" required>
+            </div><br>
+
+            <div>
+                <label>
+                    Gender
+                </label>
+                <input type="radio" name="gender" id="male">MALE
+                <input type="radio" name="gender" id="female">FEMALE
+            </div><br>
+            <div>
+                <!-- <input type="submit" value="ADD" name="submit" class="add-button"> -->
+                <button type="button" value="add" class="add-button" onclick="Addrow()">ADD</button>
+            </div>
+
+            <!-- <div id="result"></div> -->
+
+        </form>
+    </div>
+    <!-- <script src="../script/element.js" type="module">  -->
+
+    <!-- <script type="text/javascript">
+    //     function validate() {
+    //         var name = document.getElementById('name');
+    //         // var regexp = /^[2-9]{1}[0-9]{3}\s[0-9]{4}\s[0-9]{4}$/;
+    //         // var aadhar = document.form.getElementById('aadhar');
+    //         var aadhar = document.form.aadhar;
+    //         if (name.value.length <= 0) {
+    //             alert("Name is required");
+    //             name.focus();
+    //             return false;
+    //         }
+    //         else if (aadhar.value.length < 0 && aadhar.value.length > 12) {
+    //             alert("invalid Aadhar number");
+    //         }
+    //     }
+
+     </script> -->
+
+    <!-- <script type="text/javascript">
+        let x = 0;
+        const array = Array();
+
+        function add_element_to_array() {
+            array[x] = document.getElementById("name").value;
+            alert(`Element: ${array[x]} Added at index ${x}`);
+            x++;
+            document.getElementById("name").value = "";
+        }
+
+        function display_array() {
+            let e = "<hr/>";
+
+            for (let y = 0; y < array.length; y++) {
+                e += `Element ${y} = ${array[y]}<br/>`;
+            }
+            document.getElementById("result").innerHTML = e;
+        }
+    </script> -->
+    <!-- <ul id="data">
+        <li>Name</li>
+        <li>Aadhar Number</li>
+        <li>Date of birth</li>
+        <li>City</li>
+        <li>Date of Test</li>
+        <li>Time of Test</li>
+        <li>Result</li>
+        <li>Lab Name</li>
+        <li>Report Number</li>
+        <li>Gender</li>
+
+    </ul> -->
+
+    <table class="show">
+        <tr>
+            <th>Name</th>
+            <th>Aadhar</th>
+            <th>DOB</th>
+            <th>City</th>
+            <th>Date of Test</th>
+            <th>Time of Test</th>
+            <th>Date of Test</th>
+            <th>Result</th>
+            <th>Lab Name</th>
+            <th>Report Number</th>
+            <th>Gender</th>
+
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var list1 = [];
+        var list2 = [];
+        var list3 = [];
+        var list4 = [];
+        var list5 = [];
+        var list6 = [];
+        var list7 = [];
+        var list8 = [];
+        var list9 = [];
+        var list10 = [];
+        var n = 1;
+        var x = 0;
+        function Addrow() {
+            var addrow = document.getElementById('show');
+            var newrow = addrow.inserRow(n);
+            list1[x] = document.getElementById("name").value;
+            list2[x] = document.getElementById("aadhar-card").value;
+            list3[x] = document.getElementById("dob").value;
+            list4[x] = document.getElementById("city").value;
+            list5[x] = document.getElementById("date-of-test").value;
+            list6[x] = document.getElementById("time-of-test").value;
+            list7[x] = document.getElementById("result").value;
+            list8[x] = document.getElementById("lab-name").value;
+            list9[x] = document.getElementById("report-number").value;
+
+            list10[x] = document.querySelector('input[name="gender"]:checked').value;
+            var cel1 = newrow.insertcell(0);
+            var cel2 = newrow.insertcell(1);
+            var cel3 = newrow.insertcell(2);
+            var cel4 = newrow.insertcell(3);
+            var cel5 = newrow.insertcell(4);
+            var cel6 = newrow.insertcell(5);
+            var cel7 = newrow.insertcell(6);
+            var cel8 = newrow.insertcell(7);
+            var cel9 = newrow.insertcell(8);
+            var cel10 = newrow.insertcell(9);
+            cel1.innerHTML = list1[x];
+            cel2.innerHTML = list2[x];
+            cel3.innerHTML = list3[x];
+            cel4.innerHTML = list4[x];
+            cel5.innerHTML = list5[x];
+            cel6.innerHTML = list6[x];
+            cel7.innerHTML = list7[x];
+            cel8.innerHTML = list8[x];
+            cel9.innerHTML = list9[x];
+            cel10.innerHTML = list10[x];
+            n++;
+            x++;
+
+
+
+
+        }
+    </script>
+    <!-- <script src="./new.js"></script> -->
+</body>
+
+</html>
