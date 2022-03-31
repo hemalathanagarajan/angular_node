@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RT-PCR Form</title>
+    <link rel="stylesheet" href="rtform.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tab tab-2">
+            <h1>RT-PCR</h1>
+            <div id="1">
+                <label>Name :</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div id="2">
+                <label>Aadhar No :</label>
+
+                <input type="text" name="" id="aadhar">
+            </div>
+            <div id="3">
+                <label>Date 0f Birth :</label>
+
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div id="4">
+                <label>City</label>
+
+                <input type="text" name="city" id="city">
+            </div>
+            <div id="5">
+                <label>Date 0f Test :</label>
+
+                <input type="date" name="date" id="date">
+            </div>
+            <div id="6">
+                <label>Time 0f Test :</label>
+
+                <input type="time" name="time" id="time">
+            </div>
+            <div id="7">
+                <label name="gender" id="gender">Gender</label>
+
+                <input type="radio" name="gender" id="gender1" value="male">Male
+                <input type="radio" name="gender" id="gender2" value="Negative">Female
+                <input type="radio" name="gender" id="gender3" value="others">Others
+
+            </div>
+            <div id="8">
+                <label>Lab Name</label>
+
+                <input type="text" name="lab" id="lab">
+            </div>
+            <div id="9">
+                <label>Report Number:</label>
+
+                <input type="number" name="report" id="report">
+            </div>
+            <div id="10">
+                <label>Result</label>
+
+                <input type="radio" name="result" id="result" value="positive">Positive
+                <input type="radio" name="result" id="result" value="Negative">Negative
+            </div>
+            <button id="add">Add</button>
+        </div>
+
+        <div class="tab tab-1">
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Aadhar No</th>
+                    <th>DOB</th>
+                    <th>City</th>
+                    <th>Date of Test</th>
+                    <th>Time of Test</th>
+                    <th>Gender</th>
+                    <th>Lab Name</th>
+                    <th>Report</th>
+                    <th>Result</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="bar">
+            Search:<input type="text" id="search" onkeyup="Search()" placeholder="Search by aadhar number..">
+        </div>
+        <button id="reload">Reset</button>
+
+
+    </div>
+    <script type="module" src="./handlers.js"></script>
+</body>
+
+</html>

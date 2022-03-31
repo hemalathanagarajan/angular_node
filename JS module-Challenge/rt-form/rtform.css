@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+body {
+      background-image: linear-gradient(to left top, #475bde, #0079e7, #008ee1, #009fd1, #17acc0, #2fa3b4, #3c99a8, #45909c, #1c718a, #005276, #00335e, #051642);
+    color: rgb(17, 17, 17);
+    
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+  }
+  label,input{
+    display: inline-block;
+    padding: 10px;
+}
+label{
+    font-size: 20px;
+    font-weight: 600;
+    width: 35%;
+}
+  .tab-2 {
+    text-align: left;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border: 2px solid rgb(24, 23, 23);
+    border-radius: 25px;
+    margin-top: 3rem;
+    background-color: white;
+  }
+  .tab-2 div {
+    margin: 10px;
+  }
+  table {
+    width: 1250px;
+    border: 1px solid rgb(233, 227, 227);
+    /* border-collapse: collapse; */
+    text-align: center;
+    margin-top: 4rem;
+    /* display: none; */
+  }
+  th {
+      background-image: linear-gradient(to left top, #475bde, #0079e7, #008ee1, #009fd1, #17acc0, #2fa3b4, #3c99a8, #45909c, #1c718a, #005276, #00335e, #051642);
+
+  }
+  table tr th,
+  table tr td {
+    border: 1px solid rgb(29, 28, 28);
+    padding: 12px 7px;
+  }
+  .bar {
+    margin: 20px;
+  }
+  button {
+    margin: 20px;
+    padding: 0.7rem 2rem;
+    background-color: #fff;
+    border: 0.5px solid black;
+    border-radius: 0px;
+    box-shadow: 1px 1px 3px black;
+    color: black;
+    transition: all 0.5s;
+    margin-left:31%;
+  }
+  #reload{
+        margin-left: 12vh;
+  }
+  button:hover {
+    background-color: white;
+  }
+  input {
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+  }
+  .tab-2{
+    display: inline-block;
+  }
+ 
+  #gender1,#gender2,#gender3{ 
+    width:40px;
+    height:15px;
+  }  
+  #result {
+    width: 60px;
+    height: 15px;
+  }
+  #search {
+    width: 20rem;
+    text-align: center;
+    height: 2rem;
+    border: 1px solid rgb(19, 18, 18);
+    margin-top: 3rem;
+  }
