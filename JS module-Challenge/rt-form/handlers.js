@@ -2,7 +2,7 @@ import { checkEmptyInput } from "./validation.js";
 import { addHtmlTableRow, reload } from "./collection.js";
 import { selectedRowToInput, myFunction } from "./tabledisplay.js";
 
-var addData = document.getElementById("add-btn");
+var addData = document.getElementById("add");
 addData.addEventListener("click", function () {
   addHtmlTableRow();
 });
