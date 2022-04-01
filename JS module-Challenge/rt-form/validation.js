@@ -8,7 +8,7 @@ export function checkEmptyInput() {
        city = document.getElementById("city").value,
        date = document.getElementById("date").value,
        time = document.getElementById("time").value,
-       gender = document.getElementById("gender").value,
+       gender = document.getElementsByName("gender").value,
       //  gender = document.querySelector([name=gender])
        lab = document.getElementById("lab").value,
        report = document.getElementById("report").value,
