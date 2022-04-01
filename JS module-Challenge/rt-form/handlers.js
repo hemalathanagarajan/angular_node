@@ -7,10 +7,10 @@ addData.addEventListener("click", function () {
   addHtmlTableRow();
 });
 
-function Search() {
+function callSearch() {
   myFunction();
 }
-window.callSearch = Search;
+window.callSearch = callSearch;
 var x = document.getElementById("reload");
 x.addEventListener("click", function () {
   reload();
