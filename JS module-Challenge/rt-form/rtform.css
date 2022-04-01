@@ -41,10 +41,8 @@ label{
   table {
     width: 1250px;
     border: 1px solid rgb(233, 227, 227);
-    /* border-collapse: collapse; */
     text-align: center;
     margin-top: 4rem;
-    /* display: none; */
   }
   th {
       background-image: linear-gradient(to left top, #475bde, #0079e7, #008ee1, #009fd1, #17acc0, #2fa3b4, #3c99a8, #45909c, #1c718a, #005276, #00335e, #051642);

@@ -1,7 +1,6 @@
 export function selectedRowToInput() {
     for (var i = 1; i < table.rows.length; i++) {
       table.rows[i].onclick = function () {
-        // get the seected row index
         rIndex = this.rowIndex;
         document.getElementById("fname").value = this.cells[0].innerHTML;
         document.getElementById("aadhar").value = this.cells[1].innerHTML;
